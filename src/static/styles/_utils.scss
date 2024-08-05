@@ -17,3 +17,11 @@
   margin-top: $y;
   margin-bottom: $y;
 }
+
+@function compute-color($color) {
+  @if (lightness($color) < 90) {
+    @return black;
+  } @else {
+    @return white;
+  }
+}
