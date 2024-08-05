@@ -1,7 +1,11 @@
 /* Local imports */
 @import "components/_utils";
 
-// @import "components/_navbar";
+/* Import components */
+@import "components/_navbar";
+@import "components/_dropdown";
+
+/* Import pages */
 @import "home";
 
 * {

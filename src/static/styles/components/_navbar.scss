@@ -58,13 +58,13 @@
       display: none;
     }
 
-    #dropdown {
+    #dropdown-button {
       display: block;
     }
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   #navbar {
     height: 100px;
 
@@ -76,7 +76,7 @@
       display: flex;
     }
 
-    #dropdown {
+    #dropdown-button {
       display: none;
     }
   }
