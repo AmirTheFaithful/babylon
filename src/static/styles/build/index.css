@@ -115,7 +115,7 @@
 }
 
 .dropdown-enabled {
-  z-index: 100;
+  z-index: 20;
   position: absolute;
   display: flex;
   flex-direction: column;
