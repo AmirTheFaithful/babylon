@@ -4,6 +4,7 @@
 /* Import components */
 @import "components/_navbar";
 @import "components/_dropdown";
+@import "components/_card";
 
 /* Import pages */
 @import "home";
@@ -18,6 +19,8 @@ body {
   height: 1300px;
 }
 
-// #main {
-//   padding: 16px;
-// }
+#main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
