@@ -54,9 +54,16 @@
       }
     }
 
-    #dropdown-button {
+    #hamburger {
       display: block;
-      padding: 20px;
+
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+
+      i {
+        font-size: 40px;
+      }
     }
   }
 }
@@ -94,7 +101,7 @@
       }
     }
 
-    #dropdown-button {
+    #hamburger {
       display: none;
     }
   }

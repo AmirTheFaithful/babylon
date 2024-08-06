@@ -45,9 +45,14 @@
   #navbar #nav-links a {
     display: none;
   }
-  #navbar #dropdown-button {
+  #navbar #hamburger {
     display: block;
-    padding: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+  #navbar #hamburger i {
+    font-size: 40px;
   }
 }
 /* Tablets */
@@ -79,7 +84,7 @@
     display: flex;
     font-size: 16px;
   }
-  #navbar #dropdown-button {
+  #navbar #hamburger {
     display: none;
   }
 }
