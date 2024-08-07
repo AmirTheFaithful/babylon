@@ -9,7 +9,7 @@
     {% include "components/_main-image.html" %}
 
     <!-- "Why CLT house is" card -->
-    <div id="card_1">
+    <section id="sec_1">
       <img src="https://cltbuildings.ee/wp-content/uploads/2021/02/main-banner-1116-x-634-1.jpg">
       <div class="text">
         <h1>Будинок з CLT панелей:</h1>
@@ -21,15 +21,45 @@
           <li>Гарантія</li>
         </ul>
       </div>
-    </div>
+    </section>
 
     <!-- "Our services" card -->
-    <div class="card">
+    <!-- <section id="card_2">
       <h1>НАШІ ПОСЛУГИ</h1>
-      <div class="column">
-        <span></span>
-        <span></span>
+      <div id="list-container">
+        <div class="list-col"></div>
+        <div class="list-col"></div>
       </div>
-    </div>
+    </section> -->
+
+    <!-- "Our Projects" section -->
+    <section id="sec_3">
+      <h1>НАШІ ПРОЄКТИ</h1>
+      <!-- List of project cards -->
+      <div id="card-container">
+        
+        <!-- "CLT Technologies" card -->
+        <div id="clt-card" class="card">
+          <div class="mask">
+            <a class="btn" href="/clt-tech">Технологія CLT</a>
+          </div>
+        </div>
+
+        <!-- "Stone Houses" card -->
+        <div id="stone-card" class="card">
+          <div class="mask">
+            <a class="btn" href="/stone-houses">Камʼяні Будинки</a>
+          </div>
+        </div>
+
+        <!-- "Projects And Pricings" card -->
+        <div id="pricing-card" class="card">
+          <div class="mask">
+            <a class="btn" href="/projects-and-pricings">Проєкти Та Ціни</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </main>
 {% endblock %}

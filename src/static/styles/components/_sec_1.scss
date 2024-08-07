@@ -1,6 +1,6 @@
 @import "../components/_utils.scss";
 
-#card_1 {
+#sec_1 {
   display: flex;
   align-items: center;
 
@@ -27,7 +27,7 @@
 
 /* Mobile */
 @media (min-width: 300px) {
-  #card_1 {
+  #sec_1 {
     flex-direction: column;
     row-gap: 40px;
 
@@ -51,7 +51,7 @@
 
 /* Tablets */
 @media (min-width: 481px) {
-  #card_1 {
+  #sec_1 {
     flex-direction: column;
     row-gap: 60px;
 
@@ -75,7 +75,7 @@
 
 /* Large Tablets */
 @media (min-width: 580px) {
-  #card_1 {
+  #sec_1 {
     h1 {
       font-size: 50px;
       letter-spacing: 2px;
@@ -92,7 +92,7 @@
 
 /* Small Desktop */
 @media (min-width: 769px) {
-  #card_1 {
+  #sec_1 {
     column-gap: 60px;
     flex-direction: row;
 
@@ -112,7 +112,7 @@
 
 /* Large desktops */
 @media (min-width: 1025px) {
-  #card_1 {
+  #sec_1 {
     column-gap: 100px;
 
     img {

@@ -1,0 +1,59 @@
+#card_3 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    padding: 6px;
+
+    .card {
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+      
+      .label {
+        display: flex;
+        justify-content: center;
+
+        a {
+          color: white;
+          cursor: pointer;
+          text-decoration: none;
+          @include padding-x(12px);
+          @include padding-y(4px);
+          border: none;
+          font-size: 26px;
+          box-shadow: 0 0 12px #222c;
+          background-color: chocolate;
+        }
+      }
+    }
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+  
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+  
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+  
+}
+
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  
+}

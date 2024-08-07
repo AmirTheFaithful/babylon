@@ -165,7 +165,7 @@
     font-size: 40px;
   }
 }
-#card_1 {
+#sec_1 {
   display: flex;
   align-items: center;
   color: white;
@@ -173,102 +173,204 @@
   background-color: rgba(16, 16, 16, 0.8745098039);
   overflow: hidden;
 }
-#card_1 h1 {
+#sec_1 h1 {
   color: #eecc54;
 }
-#card_1 img {
+#sec_1 img {
   box-shadow: 0 0 36px rgba(170, 170, 170, 0.4);
 }
-#card_1 li::marker {
+#sec_1 li::marker {
   color: #eecc54;
 }
 
 /* Mobile */
 @media (min-width: 300px) {
-  #card_1 {
+  #sec_1 {
     flex-direction: column;
     row-gap: 40px;
   }
-  #card_1 img {
+  #sec_1 img {
     width: 100%;
     object-fit: contain;
   }
-  #card_1 h1 {
+  #sec_1 h1 {
     font-size: 26px;
   }
-  #card_1 ul {
+  #sec_1 ul {
     font-size: 20px;
   }
-  #card_1 ul li {
+  #sec_1 ul li {
     width: 380px;
   }
 }
 /* Tablets */
 @media (min-width: 481px) {
-  #card_1 {
+  #sec_1 {
     flex-direction: column;
     row-gap: 60px;
   }
-  #card_1 img {
+  #sec_1 img {
     width: 100%;
     object-fit: contain;
   }
-  #card_1 h1 {
+  #sec_1 h1 {
     font-size: 34px;
   }
-  #card_1 ul {
+  #sec_1 ul {
     font-size: 20px;
   }
-  #card_1 ul li {
+  #sec_1 ul li {
     width: 400px;
   }
 }
 /* Large Tablets */
 @media (min-width: 580px) {
-  #card_1 h1 {
+  #sec_1 h1 {
     font-size: 50px;
     letter-spacing: 2px;
   }
-  #card_1 ul {
+  #sec_1 ul {
     font-size: 24px;
   }
-  #card_1 ul li {
+  #sec_1 ul li {
     width: 460px;
   }
 }
 /* Small Desktop */
 @media (min-width: 769px) {
-  #card_1 {
+  #sec_1 {
     column-gap: 60px;
     flex-direction: row;
   }
-  #card_1 h1 {
+  #sec_1 h1 {
     font-size: 24px;
     letter-spacing: 1px;
   }
-  #card_1 ul li {
+  #sec_1 ul li {
     width: 320px;
     font-size: 16px;
   }
 }
 /* Large desktops */
 @media (min-width: 1025px) {
-  #card_1 {
+  #sec_1 {
     column-gap: 100px;
   }
-  #card_1 img {
+  #sec_1 img {
     width: 50%;
   }
-  #card_1 h1 {
+  #sec_1 h1 {
     font-size: 32px;
     letter-spacing: 2px;
   }
-  #card_1 ul li {
+  #sec_1 ul li {
     width: 420px;
     font-size: 22px;
   }
 }
 /* TVs and extra large screens */
+/* Mobile */
+@media (min-width: 300px) {
+  #sec_2 h1 {
+    font-size: 16px;
+  }
+}
+/* Tablets */
+/* Small Desktop */
+/* Large desktops */
+/* TVs and extra large screens */
+#clt-card {
+  background-image: url("../../assets/clt-technology.png");
+}
+#clt-card .btn {
+  background-color: rgba(121, 50, 0, 0.6862745098);
+}
+
+#stone-card {
+  background-image: url("https://cdn.modlar.com/photos/684/img/s_1920_x/stone_house_1_55b04a42a2c0b.jpg");
+}
+#stone-card .btn {
+  background-color: rgba(56, 56, 56, 0.6862745098);
+}
+
+#pricing-card {
+  background-image: url("https://img.freepik.com/premium-photo/elevated-view-house-model-with-key-stacked-coins-blueprint_23-2147863916.jpg");
+}
+#pricing-card .btn {
+  background-color: rgba(40, 71, 198, 0.6862745098);
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 0 0 36px rgba(34, 34, 34, 0.4666666667);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(40, 40, 80, 0.25);
+}
+.card .mask .btn {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  width: 100%;
+  background-color: rgba(121, 50, 0, 0.8745098039);
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 32px;
+  transition: padding 0.2s ease-in-out;
+  text-align: center;
+  font-family: "Arsenal SC";
+  text-decoration: none;
+  border-top-left-radius: 46px;
+  border-top-right-radius: 46px;
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  #card-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    padding: 40px;
+  }
+}
+/* Tablets */
+/* Small Desktop */
+@media (min-width: 769px) {
+  #card-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+  #card-container .btn:hover {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+}
+/* Large desktops */
+@media (min-width: 1025px) {
+  #card-container {
+    padding: 40px;
+    column-gap: 40px;
+  }
+}
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  #card-container {
+    padding: 80px;
+    column-gap: 80px;
+  }
+}
 /* Import pages */
 /* Import components of the home page */
 #container {
@@ -370,7 +472,7 @@
 }
 
 body {
-  height: 1300px;
+  height: 2600px;
 }
 
 #main {
