@@ -293,6 +293,14 @@
   background-color: rgba(56, 56, 56, 0.6862745098);
 }
 
+#sec_3 h1 {
+  color: #242468;
+  font-size: 46px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
 #pricing-card {
   background-image: url("https://img.freepik.com/premium-photo/elevated-view-house-model-with-key-stacked-coins-blueprint_23-2147863916.jpg");
 }
@@ -343,7 +351,6 @@
     padding: 40px;
   }
 }
-/* Tablets */
 /* Small Desktop */
 @media (min-width: 769px) {
   #card-container {
