@@ -6,8 +6,7 @@
 @import "components/_dropdown";
 @import "components/_sec_1";
 @import "components/_sec_2";
-// @import "components/_sec_3";
-@import "components/_sec_3-test.scss";
+@import "components/_sec_3";
 
 /* Import pages */
 @import "home";
@@ -19,7 +18,7 @@
 }
 
 body {
-  height: 2600px;
+  height: 3800px;
 }
 
 #main {

@@ -269,16 +269,6 @@
   }
 }
 /* TVs and extra large screens */
-/* Mobile */
-@media (min-width: 300px) {
-  #sec_2 h1 {
-    font-size: 16px;
-  }
-}
-/* Tablets */
-/* Small Desktop */
-/* Large desktops */
-/* TVs and extra large screens */
 #clt-card {
   background-image: url("../../assets/clt-technology.png");
 }
@@ -293,7 +283,7 @@
   background-color: rgba(56, 56, 56, 0.6862745098);
 }
 
-#sec_3 h1 {
+#sec_2 h1 {
   color: #242468;
   font-size: 46px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -378,6 +368,35 @@
     column-gap: 80px;
   }
 }
+/* Mobile */
+@media (min-width: 300px) {
+  #sec_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 16px;
+  }
+  #sec_3 h1 {
+    text-align: center;
+  }
+  #sec_3 .list-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #sec_3 .list-col strong {
+    font-size: 22px;
+    margin-left: 16px;
+  }
+  #sec_3 .list-col ul {
+    margin-left: 36px;
+  }
+}
+/* Tablets */
+/* Small Desktop */
+/* Large desktops */
+/* TVs and extra large screens */
 /* Import pages */
 /* Import components of the home page */
 #container {
@@ -479,7 +498,7 @@
 }
 
 body {
-  height: 2600px;
+  height: 3800px;
 }
 
 #main {
