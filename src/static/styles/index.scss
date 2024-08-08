@@ -4,10 +4,12 @@
 /* Import components */
 @import "components/_navbar";
 @import "components/_dropdown";
+@import "components/_footer.scss";
 @import "components/_sec_1";
 @import "components/_sec_2";
 @import "components/_sec_3";
 @import "components/_sec_4";
+@import "components/contact-form";
 
 /* Import pages */
 @import "home";

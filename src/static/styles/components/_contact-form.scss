@@ -1,0 +1,47 @@
+#contact-form {
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+
+  input,
+  textarea {
+    border: none;
+    padding: 16px;
+    font-size: 24px;
+    font-family: "Roboto";
+    box-shadow: 0 0 12px #0006;
+    border-radius: 8px;
+    background-color: #0867e460;
+  }
+  ::placeholder {
+    color: black;
+  }
+
+  input[type="submit"] {
+    color: black;
+    font-size: 30px;
+    background-color: #eecc54;
+  }
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+}
+
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+}

@@ -165,6 +165,24 @@
     font-size: 40px;
   }
 }
+#footer {
+  display: flex;
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  #footer {
+    align-items: center;
+    flex-direction: column;
+  }
+  #footer #footer-logo {
+    width: 350px;
+  }
+}
+/* Tablets */
+/* Small Desktop */
+/* Large desktops */
+/* TVs and extra large screens */
 #sec_1 {
   display: flex;
   align-items: center;
@@ -534,6 +552,36 @@
     font-size: 40px;
   }
 }
+#contact-form {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+#contact-form input,
+#contact-form textarea {
+  border: none;
+  padding: 16px;
+  font-size: 24px;
+  font-family: "Roboto";
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  background-color: rgba(8, 103, 228, 0.3764705882);
+}
+#contact-form ::placeholder {
+  color: black;
+}
+#contact-form input[type=submit] {
+  color: black;
+  font-size: 30px;
+  background-color: #eecc54;
+}
+
+/* Mobile */
+/* Tablets */
+/* Small Desktop */
+/* Large desktops */
+/* TVs and extra large screens */
 /* Import pages */
 /* Import components of the home page */
 #container {

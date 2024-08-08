@@ -1,0 +1,31 @@
+#footer {
+  display: flex;
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  #footer {
+    align-items: center;
+    flex-direction: column;
+
+    #footer-logo {
+      width: 350px;
+    }
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+}
+
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+}
