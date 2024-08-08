@@ -449,6 +449,91 @@
 }
 /* Large desktops */
 /* TVs and extra large screens */
+#sec_4 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-image: url("../../assets/construction-site.jpg");
+  background-repeat: no-repeat;
+}
+#sec_4 .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Roboto Condensed";
+  background-color: rgba(20, 20, 20, 0.8);
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  #sec_4 {
+    height: 400px;
+  }
+  #sec_4 .mask {
+    padding: 6px;
+    row-gap: 20px;
+  }
+  #sec_4 h1 {
+    color: #eecc54;
+    font-size: 30px;
+    text-align: center;
+  }
+  #sec_4 p {
+    color: white;
+    font-size: 16px;
+  }
+  #sec_4 strong {
+    font-size: 18px;
+  }
+}
+/* Tablets */
+@media (min-width: 481px) {
+  #sec_4 {
+    height: 550px;
+  }
+  #sec_4 .mask {
+    row-gap: 40px;
+  }
+  #sec_4 h1 {
+    color: #eecc54;
+    font-size: 40px;
+    text-align: center;
+  }
+  #sec_4 p {
+    color: white;
+    font-size: 22px;
+  }
+  #sec_4 strong {
+    font-size: 26px;
+  }
+}
+/* Large desktops */
+@media (min-width: 1025px) {
+  #sec_4 {
+    height: 750px;
+  }
+  #sec_4 .mask {
+    row-gap: 60px;
+  }
+  #sec_4 .mask h1 {
+    color: #eecc54;
+    font-size: 80px;
+    text-align: center;
+  }
+  #sec_4 .mask p {
+    color: white;
+    font-size: 36px;
+  }
+  #sec_4 .mask strong {
+    font-size: 40px;
+  }
+}
 /* Import pages */
 /* Import components of the home page */
 #container {
@@ -550,7 +635,7 @@
 }
 
 body {
-  height: 7200px;
+  height: 10000px;
 }
 
 #main {
