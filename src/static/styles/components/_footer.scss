@@ -1,5 +1,11 @@
 #footer {
   display: flex;
+  box-shadow: 0 0 42px #2228;
+  border-top: 6px solid #eecc54;
+
+  #footer-logo {
+    width: 200px;
+  }
 }
 
 /* Mobile */
@@ -7,10 +13,6 @@
   #footer {
     align-items: center;
     flex-direction: column;
-
-    #footer-logo {
-      width: 350px;
-    }
   }
 }
 

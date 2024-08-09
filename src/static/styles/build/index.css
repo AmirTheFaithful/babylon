@@ -167,6 +167,11 @@
 }
 #footer {
   display: flex;
+  box-shadow: 0 0 42px rgba(34, 34, 34, 0.5333333333);
+  border-top: 6px solid #eecc54;
+}
+#footer #footer-logo {
+  width: 200px;
 }
 
 /* Mobile */
@@ -174,9 +179,6 @@
   #footer {
     align-items: center;
     flex-direction: column;
-  }
-  #footer #footer-logo {
-    width: 350px;
   }
 }
 /* Tablets */
@@ -552,20 +554,13 @@
     font-size: 40px;
   }
 }
-#contact-form {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 32px;
-}
 #contact-form input,
 #contact-form textarea {
   border: none;
-  padding: 16px;
-  font-size: 24px;
-  font-family: "Roboto";
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  font-family: "Roboto";
   border-radius: 8px;
+  outline-style: none;
   background-color: rgba(8, 103, 228, 0.3764705882);
 }
 #contact-form ::placeholder {
@@ -573,13 +568,61 @@
 }
 #contact-form input[type=submit] {
   color: black;
-  font-size: 30px;
   background-color: #eecc54;
 }
 
 /* Mobile */
+@media (min-width: 300px) {
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    row-gap: 32px;
+  }
+  #contact-form input,
+  #contact-form textarea {
+    padding: 16px;
+    font-size: 24px;
+  }
+  #contact-form input[type=submit] {
+    font-size: 30px;
+    margin-top: 26px;
+  }
+}
 /* Tablets */
+@media (min-width: 481px) {
+  #contact-form {
+    padding: 26px;
+    row-gap: 46px;
+  }
+  #contact-form input,
+  #contact-form textarea {
+    padding: 20px;
+    font-size: 26px;
+  }
+  #contact-form input[type=submit] {
+    font-size: 32px;
+  }
+}
 /* Small Desktop */
+@media (min-width: 769px) {
+  #contact-form {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    column-gap: 24px;
+    row-gap: 36px;
+    padding: 46px;
+  }
+  #contact-form input,
+  #contact-form textarea {
+    padding: 12px;
+    font-size: 22px;
+  }
+  #contact-form input[type=submit] {
+    font-size: 22px;
+  }
+}
 /* Large desktops */
 /* TVs and extra large screens */
 /* Import pages */

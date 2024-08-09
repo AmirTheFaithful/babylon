@@ -1,18 +1,11 @@
 #contact-form {
-  padding: 16px;
-
-  display: flex;
-  flex-direction: column;
-  row-gap: 32px;
-
   input,
   textarea {
     border: none;
-    padding: 16px;
-    font-size: 24px;
-    font-family: "Roboto";
     box-shadow: 0 0 12px #0006;
+    font-family: "Roboto";
     border-radius: 8px;
+    outline-style: none;
     background-color: #0867e460;
   }
   ::placeholder {
@@ -21,21 +14,70 @@
 
   input[type="submit"] {
     color: black;
-    font-size: 30px;
     background-color: #eecc54;
   }
 }
 
 /* Mobile */
 @media (min-width: 300px) {
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+
+    padding: 16px;
+    row-gap: 32px;
+
+    input,
+    textarea {
+      padding: 16px;
+      font-size: 24px;
+    }
+
+    input[type="submit"] {
+      font-size: 30px;
+      margin-top: 26px;
+    }
+  }
 }
 
 /* Tablets */
 @media (min-width: 481px) {
+  #contact-form {
+    padding: 26px;
+    row-gap: 46px;
+
+    input,
+    textarea {
+      padding: 20px;
+      font-size: 26px;
+    }
+
+    input[type="submit"] {
+      font-size: 32px;
+    }
+  }
 }
 
 /* Small Desktop */
 @media (min-width: 769px) {
+  #contact-form {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    column-gap: 24px;
+    row-gap: 36px;
+    padding: 46px;
+
+    input,
+    textarea {
+      padding: 12px;
+      font-size: 22px;
+    }
+
+    input[type="submit"] {
+      font-size: 22px;
+    }
+  }
 }
 
 /* Large desktops */
