@@ -6,7 +6,7 @@
     font-family: "Roboto";
     border-radius: 8px;
     outline-style: none;
-    background-color: #0867e460;
+    border-left: 4px solid black;
   }
   ::placeholder {
     color: black;
@@ -14,6 +14,7 @@
 
   input[type="submit"] {
     color: black;
+    border: none;
     background-color: #eecc54;
   }
 }
