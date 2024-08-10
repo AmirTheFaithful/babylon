@@ -1,4 +1,13 @@
-#contact-form {
+#form-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  h1 {
+    color: #242424df;
+    text-align: center;
+    font-family: "Roboto";
+  }
+
   input,
   textarea {
     border: none;
@@ -61,6 +70,12 @@
 
 /* Small Desktop */
 @media (min-width: 769px) {
+  #form-container {
+    h1 {
+      font-size: 26px;
+    }
+  }
+
   #contact-form {
     // On desktop screens it turns into a grid
     display: grid;
@@ -89,6 +104,12 @@
 
 /* Large desktops */
 @media (min-width: 1025px) {
+  #form-container {
+    h1 {
+      font-size: 32px;
+    }
+  }
+
   #contact-form {
     column-gap: 60px;
     row-gap: 48px;
