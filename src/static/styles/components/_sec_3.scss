@@ -4,12 +4,6 @@
   justify-content: center;
   row-gap: 20px;
 
-  h1 {
-    color: #242424df;
-    text-align: center;
-    font-family: "Roboto";
-  }
-
   #list-container {
     display: flex;
   }
@@ -40,13 +34,6 @@
       row-gap: 20px;
     }
 
-    h1 {
-      padding: 6px;
-      font-size: 26px;
-      margin-bottom: 20px;
-      letter-spacing: 1px;
-    }
-
     .list-col {
       row-gap: 40px;
       padding: 12px;
@@ -67,17 +54,6 @@
           font-size: 20px;
         }
       }
-    }
-  }
-}
-
-/* Tablets */
-@media (min-width: 481px) {
-  #sec_3 {
-    h1 {
-      font-size: 30px;
-      margin-bottom: 20px;
-      letter-spacing: 2px;
     }
   }
 }

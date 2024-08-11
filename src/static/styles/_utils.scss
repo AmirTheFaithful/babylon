@@ -25,3 +25,19 @@
     @return white;
   }
 }
+
+.movable {
+  opacity: 0;
+  transform: translateX(-400px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .movable {
+    transition: opacity 3s ease, transform 2s ease;
+  }
+}
+
+.animated {
+  opacity: 1;
+  transform: none;
+}

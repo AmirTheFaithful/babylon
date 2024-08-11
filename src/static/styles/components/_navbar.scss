@@ -1,4 +1,4 @@
-@import "_utils";
+@import "../_utils";
 
 #navbar {
   position: sticky;
@@ -28,7 +28,8 @@
       transition: background-color 0.3s ease-in-out;
 
       font-family: "Arsenal SC";
-    }:hover {
+    }
+    :hover {
       color: white;
       background-color: #03142ab0;
     }

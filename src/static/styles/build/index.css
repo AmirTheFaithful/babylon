@@ -1,5 +1,35 @@
 /* Local imports */
+.movable {
+  opacity: 0;
+  transform: translateX(-400px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .movable {
+    transition: opacity 3s ease, transform 2s ease;
+  }
+}
+.animated {
+  opacity: 1;
+  transform: none;
+}
+
 /* Import components */
+.movable {
+  opacity: 0;
+  transform: translateX(-400px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .movable {
+    transition: opacity 3s ease, transform 2s ease;
+  }
+}
+.animated {
+  opacity: 1;
+  transform: none;
+}
+
 #navbar {
   position: sticky;
   top: 0;
@@ -385,12 +415,6 @@
   background-color: rgba(56, 56, 56, 0.6862745098);
 }
 
-#sec_2 h1 {
-  color: rgba(36, 36, 36, 0.8745098039);
-  text-align: center;
-  font-family: "Roboto";
-}
-
 #pricing-card {
   background-image: url("https://img.freepik.com/premium-photo/elevated-view-house-model-with-key-stacked-coins-blueprint_23-2147863916.jpg");
 }
@@ -474,11 +498,6 @@
   justify-content: center;
   row-gap: 20px;
 }
-#sec_3 h1 {
-  color: rgba(36, 36, 36, 0.8745098039);
-  text-align: center;
-  font-family: "Roboto";
-}
 #sec_3 #list-container {
   display: flex;
 }
@@ -503,12 +522,6 @@
     flex-direction: column;
     row-gap: 20px;
   }
-  #sec_3 h1 {
-    padding: 6px;
-    font-size: 26px;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-  }
   #sec_3 .list-col {
     row-gap: 40px;
     padding: 12px;
@@ -525,14 +538,6 @@
   }
   #sec_3 .list-col ul li {
     font-size: 20px;
-  }
-}
-/* Tablets */
-@media (min-width: 481px) {
-  #sec_3 h1 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
   }
 }
 /* Small Desktop */
@@ -582,7 +587,7 @@
   flex-direction: column;
   text-align: center;
   font-family: "Roboto Condensed";
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(20, 20, 60, 0.4);
 }
 
 /* Mobile */
@@ -654,11 +659,6 @@
   flex-direction: column;
   row-gap: 20px;
 }
-#form-container h1 {
-  color: rgba(36, 36, 36, 0.8745098039);
-  text-align: center;
-  font-family: "Roboto";
-}
 #form-container input,
 #form-container textarea {
   border: none;
@@ -712,9 +712,6 @@
 }
 /* Small Desktop */
 @media (min-width: 769px) {
-  #form-container h1 {
-    font-size: 26px;
-  }
   #contact-form {
     display: grid;
     grid-template-rows: auto auto 160px;
@@ -738,9 +735,6 @@
 }
 /* Large desktops */
 @media (min-width: 1025px) {
-  #form-container h1 {
-    font-size: 32px;
-  }
   #contact-form {
     column-gap: 60px;
     row-gap: 48px;
@@ -753,6 +747,102 @@
   #contact-form input[type=submit] {
     font-size: 36px;
     grid-column: 1/3;
+  }
+}
+.movable {
+  opacity: 0;
+  transform: translateX(-400px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .movable {
+    transition: opacity 3s ease, transform 2s ease;
+  }
+}
+.animated {
+  opacity: 1;
+  transform: none;
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  #sponsors-line {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 24px;
+    background-color: #eecc54;
+  }
+  #sponsors-line div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  #sponsors-line img {
+    width: 120px;
+  }
+}
+/* Tablets */
+@media (min-width: 481px) {
+  #sponsors-line div {
+    row-gap: 30px;
+  }
+  #sponsors-line img {
+    width: 140px;
+  }
+}
+/* Small Desktop */
+@media (min-width: 769px) {
+  #sponsors-line div {
+    flex-direction: row;
+    column-gap: 16px;
+  }
+  #sponsors-line img {
+    width: 120px;
+  }
+}
+/* Large desktops */
+@media (min-width: 1025px) {
+  #sponsors-line div {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    column-gap: 36px;
+  }
+  #sponsors-line img {
+    width: 140px;
+  }
+}
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  #sponsors-line div {
+    column-gap: 50px;
+  }
+  #sponsors-line img {
+    width: 160px;
+  }
+}
+/* Import common components, that may be found
+ * in many places of the prject */
+h1 {
+  color: rgba(36, 36, 36, 0.8745098039);
+  text-align: center;
+  font-family: "Roboto";
+}
+
+@media (min-width: 300px) {
+  h1 {
+    padding: 6px;
+    font-size: 26px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+}
+@media (min-width: 481px) {
+  h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
   }
 }
 /* Import pages */

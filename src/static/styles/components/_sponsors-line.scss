@@ -1,0 +1,76 @@
+@import "../utils";
+
+/* Mobile */
+@media (min-width: 300px) {
+  #sponsors-line {
+    @include margin-y(120px);
+    padding: 24px;
+    background-color: #eecc54;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    img {
+      width: 120px;
+    }
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+  #sponsors-line {
+    div {
+      row-gap: 30px;
+    }
+
+    img {
+      width: 140px;
+    }
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+  #sponsors-line {
+    div {
+      flex-direction: row;
+      column-gap: 16px;
+    }
+
+    img {
+      width: 120px;
+    }
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+  #sponsors-line {
+    div {
+      @include margin-y(36px);
+      column-gap: 36px;
+    }
+
+    img {
+      width: 140px;
+    }
+  }
+}
+
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  #sponsors-line {
+    div {
+      column-gap: 50px;
+    }
+
+    img {
+      width: 160px;
+    }
+  }
+}

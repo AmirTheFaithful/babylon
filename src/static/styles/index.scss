@@ -1,15 +1,20 @@
 /* Local imports */
-@import "components/_utils";
+@import "_utils";
 
 /* Import components */
-@import "components/_navbar";
-@import "components/_dropdown";
-@import "components/_footer.scss";
-@import "components/_sec_1";
-@import "components/_sec_2";
-@import "components/_sec_3";
-@import "components/_sec_4";
+@import "components/navbar";
+@import "components/dropdown";
+@import "components/footer.scss";
+@import "components/sec_1";
+@import "components/sec_2";
+@import "components/sec_3";
+@import "components/sec_4";
 @import "components/contact-form";
+@import "components/sponsors-line";
+
+/* Import common components, that may be found
+ * in many places of the prject */
+@import "components/common/section-heading";
 
 /* Import pages */
 @import "home";
