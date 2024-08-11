@@ -1,0 +1,58 @@
+.link-btn {
+  // Centered at X-axis
+  margin-left: auto;
+  margin-right: auto;
+
+  color: black;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #eecc54;
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  .link-btn {
+    width: 160px;
+    padding: 6px;
+    font-size: 24px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+  .link-btn {
+    width: 180px;
+    padding: 10px;
+    font-size: 32px;
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+  .link-btn {
+    width: 260px;
+    font-size: 42px;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+    &:hover {
+      color: #ddf;
+      background-color: #ccaa27dc;
+    }
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+  .link-btn {
+    width: 300px;
+    font-size: 46px;
+  }
+}
+
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  .link-btn {
+    width: 360px;
+    font-size: 56px;
+  }
+}

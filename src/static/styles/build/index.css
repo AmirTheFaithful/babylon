@@ -593,7 +593,7 @@
 /* Mobile */
 @media (min-width: 300px) {
   #sec_4 {
-    height: 400px;
+    height: 440px;
   }
   #sec_4 .mask {
     padding: 6px;
@@ -615,7 +615,7 @@
 /* Tablets */
 @media (min-width: 481px) {
   #sec_4 {
-    height: 550px;
+    height: 670px;
   }
   #sec_4 .mask {
     row-gap: 40px;
@@ -636,14 +636,14 @@
 /* Large desktops */
 @media (min-width: 1025px) {
   #sec_4 {
-    height: 750px;
+    height: 840px;
   }
   #sec_4 .mask {
-    row-gap: 60px;
+    row-gap: 40px;
   }
   #sec_4 .mask h1 {
     color: #eecc54;
-    font-size: 80px;
+    font-size: 64px;
     text-align: center;
   }
   #sec_4 .mask p {
@@ -843,6 +843,58 @@ h1 {
     font-size: 30px;
     margin-bottom: 20px;
     letter-spacing: 2px;
+  }
+}
+.link-btn {
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #eecc54;
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  .link-btn {
+    width: 160px;
+    padding: 6px;
+    font-size: 24px;
+  }
+}
+/* Tablets */
+@media (min-width: 481px) {
+  .link-btn {
+    width: 180px;
+    padding: 10px;
+    font-size: 32px;
+  }
+}
+/* Small Desktop */
+@media (min-width: 769px) {
+  .link-btn {
+    width: 260px;
+    font-size: 42px;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  }
+  .link-btn:hover {
+    color: #ddf;
+    background-color: rgba(204, 170, 39, 0.862745098);
+  }
+}
+/* Large desktops */
+@media (min-width: 1025px) {
+  .link-btn {
+    width: 300px;
+    font-size: 46px;
+  }
+}
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  .link-btn {
+    width: 360px;
+    font-size: 56px;
   }
 }
 /* Import pages */
