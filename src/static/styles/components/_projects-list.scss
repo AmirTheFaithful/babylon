@@ -35,7 +35,7 @@
 
     .thumbnail {
       img {
-        filter: brightness(75%);
+        filter: brightness(70%);
       }
 
       h1 {
@@ -75,6 +75,7 @@
 
     .thumbnail {
       h1 {
+        left: 20px;
         font-size: 36px;
       }
     }
@@ -120,8 +121,9 @@
       h1 {
         color: white;
         bottom: 0;
+        left: 0;
         opacity: 0;
-        font-size: 16px;
+        font-size: 20px;
         transition: opacity 0.35s linear;
       }
 
@@ -183,7 +185,7 @@
 
     .thumbnail {
       h1 {
-        font-size: 32px;
+        font-size: 26px;
       }
     }
   }
@@ -200,7 +202,7 @@
 
     .thumbnail {
       h1 {
-        font-size: 32px;
+        font-size: 30px;
       }
     }
   }
@@ -217,7 +219,7 @@
 
     .thumbnail {
       h1 {
-        font-size: 16px;
+        font-size: 32px;
       }
     }
   }
@@ -234,7 +236,7 @@
 
     .thumbnail {
       h1 {
-        font-size: 16px;
+        font-size: 36px;
       }
     }
   }
