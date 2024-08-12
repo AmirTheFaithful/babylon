@@ -18,6 +18,6 @@ def clt_tech() -> str:
 def stone_houses() -> str:
   return render_template("stone-houses.html")
 
-@main_bp.route("projects")
+@main_bp.route("/projects")
 def projects() -> str:
   return render_template("projects.html")
