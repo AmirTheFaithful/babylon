@@ -1,0 +1,230 @@
+#projects-list {
+  #cataloque-grid {
+    padding: 16px;
+
+    .thumbnail {
+      cursor: pointer;
+      position: relative;
+
+      img {
+        transition: filter 0.35s linear;
+      }
+
+      h1 {
+        color: white;
+        bottom: 0;
+        opacity: 0;
+        position: absolute;
+        font-family: "Roboto";
+        transition: opacity 0.35s linear;
+      }
+
+      &:hover {
+        img {
+          filter: brightness(50%);
+        }
+
+        h1 {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  #cataloque-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+
+    .thumbnail,
+    .thumbnail > img {
+      width: 400px;
+      height: 250px;
+    }
+
+    .thumbnail {
+      h1 {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+/* Large cellphones and small tablets */
+@media (min-width: 420px) {
+  #cataloque-grid {
+    .thumbnail,
+    .thumbnail > img {
+      width: 420px;
+      height: 270px;
+    }
+
+    .thumbnail {
+      h1 {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+  #cataloque-grid {
+    .thumbnail,
+    .thumbnail > img {
+      width: 460px;
+      height: 310px;
+    }
+
+    .thumbnail {
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+/* Large Tablets */
+@media (min-width: 601px) {
+  #cataloque-grid {
+    .thumbnail,
+    .thumbnail > img {
+      width: 580px;
+      height: 440px;
+    }
+
+    .thumbnail {
+      h1 {
+        font-size: 42px;
+      }
+    }
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+  #cataloque-grid {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto auto;
+    gap: 6px 20px;
+
+    .thumbnail,
+    .thumbnail > img {
+      width: 170px;
+      height: 120px;
+    }
+
+    .thumbnail {
+      h1 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+/* Middle Desktop */
+@media (min-width: 821px) {
+  #cataloque-grid {
+    .thumbnail,
+    .thumbnail > img {
+      width: 185px;
+    }
+
+    .thumbnail {
+      h1 {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+/* Big Desktops */
+@media (min-width: 969px) {
+  #cataloque-grid {
+    row-gap: 35px;
+
+    .thumbnail,
+    .thumbnail > img {
+      width: 220px;
+    }
+
+    .thumbnail {
+      h1 {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+  #cataloque-grid {
+    .thumbnail,
+    .thumbnail > img {
+      width: 236px;
+      height: 160px;
+    }
+
+    .thumbnail {
+      h1 {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+/* Larger desktops */
+@media (min-width: 1101px) {
+  #cataloque-grid {
+    .thumbnail,
+    .thumbnail > img {
+      width: 255px;
+      height: 160px;
+    }
+
+    .thumbnail {
+      h1 {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+/* extra large desktops */
+@media (min-width: 1201px) {
+  #cataloque-grid {
+    .thumbnail,
+    .thumbnail > img {
+      width: 280px;
+      height: 190px;
+    }
+
+    .thumbnail {
+      h1 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+/* TVs and extra large screens */
+@media (min-width: 1321px) {
+  #cataloque-grid {
+    .thumbnail,
+    .thumbnail > img {
+      width: 310px;
+      height: 200px;
+    }
+
+    .thumbnail {
+      h1 {
+        font-size: 16px;
+      }
+    }
+  }
+}

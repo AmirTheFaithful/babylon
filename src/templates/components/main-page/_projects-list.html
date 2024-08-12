@@ -1,0 +1,88 @@
+<section id="projects-list">
+  <h1>НАШІ ПРОЄКТИ</h1>
+
+  <div id="cataloque-grid">
+    <!-- <div class="thumbnail" onclick="location.href='/about'">
+      <img />
+      <h1>Hi!</h1>
+    </div> -->
+
+    <script>
+      // Source of the cataloque grid contents
+      const projects = [
+        {
+          image: "../../../static/assets/proj-1/img-1.jpg",
+          name: "Злагода",
+          url: "/projects/1",
+        },
+        {
+          image: "../../../static/assets/proj-2/img-1.jpg",
+          name: "Авент",
+          url: "/projects/2",
+        },
+        {
+          image: "../../../static/assets/proj-3/img-1.jpg",
+          name: "Елегія",
+          url: "/projects/3",
+        },
+        {
+          image: "../../../static/assets/proj-4/img-1.jpg",
+          name: "Лірано",
+          url: "/projects/4",
+        },
+        {
+          image: "../../../static/assets/proj-5/img-1.jpg",
+          name: "Айдахо",
+          url: "/projects/5",
+        },
+        {
+          image: "../../../static/assets/proj-6/img-1.jpg",
+          name: "Флорида",
+          url: "/projects/6",
+        },
+        {
+          image: "../../../static/assets/proj-7/img-1.jpg",
+          name: "Ятрань",
+          url: "/projects/7",
+        },
+        {
+          image: "../../../static/assets/proj-8/img-1.jpg",
+          name: "Есперанто",
+          url: "/projects/8",
+        },
+      ];
+
+      // Builds ready for render thumbnail blocks
+      function getThumbnails() {
+        const grid = document.querySelector("#cataloque-grid");
+
+        projects.map((project) => {
+          // Create components of the block
+          const thumbnail = document.createElement("div");
+          const image = document.createElement("img");
+          const heading = document.createElement("h1");
+
+          // Set class name and the click handler that redirects to provided URL
+          thumbnail.className = "thumbnail";
+          thumbnail.onclick = function () {
+            location.href = project.url;
+          };
+
+          // Set the source picture of the image and set project's name as thumbnail's heading
+          image.src = project.image;
+          heading.append(project.name);
+
+          // Set those components to the block
+          thumbnail.append(image);
+          thumbnail.append(heading);
+
+          // And finally add thumbnail block to it's container
+          grid.append(thumbnail);
+        });
+      }
+
+      // Call on page load
+      getThumbnails();
+    </script>
+  </div>
+</section>
