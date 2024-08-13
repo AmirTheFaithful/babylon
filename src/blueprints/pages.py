@@ -6,9 +6,9 @@ main_bp: Blueprint = Blueprint("pages", __name__)
 def home() -> str:
   return render_template("home.html")
 
-@main_bp.route("/contact-us")
+@main_bp.route("/contact")
 def contact() -> str:
-  return render_template("contact-us.html")
+  return render_template("contact.html")
 
 @main_bp.route("/about")
 def about() -> str:
