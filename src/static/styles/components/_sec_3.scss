@@ -6,6 +6,8 @@
 
   #list-container {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   strong,
@@ -21,7 +23,8 @@
       color: white;
       box-shadow: 0 0 16px #2226;
       border-radius: 4px;
-      background-color: #3b3b3bd6;
+      background-image: linear-gradient(to bottom right, #02280cd6, #5e5d23d6);
+      // background-color: #3b3b3bd6;
     }
   }
 }
@@ -84,13 +87,5 @@
         }
       }
     }
-  }
-}
-
-/* TVs and extra large screens */
-@media (min-width: 1201px) {
-  #list-container {
-    margin-left: auto;
-    margin-right: auto;
   }
 }

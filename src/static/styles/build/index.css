@@ -500,6 +500,8 @@
 }
 #sec_3 #list-container {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 #sec_3 strong,
 #sec_3 li {
@@ -513,7 +515,7 @@
   color: white;
   box-shadow: 0 0 16px rgba(34, 34, 34, 0.4);
   border-radius: 4px;
-  background-color: rgba(59, 59, 59, 0.8392156863);
+  background-image: linear-gradient(to bottom right, rgba(2, 40, 12, 0.8392156863), rgba(94, 93, 35, 0.8392156863));
 }
 
 /* Mobile */
@@ -560,13 +562,6 @@
   }
   #sec_3 #list-container .service-card li {
     font-size: 24px;
-  }
-}
-/* TVs and extra large screens */
-@media (min-width: 1201px) {
-  #list-container {
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 #sec_4 {
