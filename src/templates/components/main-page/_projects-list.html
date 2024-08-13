@@ -66,6 +66,7 @@
 
           // Set class name and the click handler that redirects to provided URL
           thumbnail.className = "thumbnail";
+          thumbnail.classList.add("movable-top");
           thumbnail.onclick = function () {
             location.href = project.url;
           };

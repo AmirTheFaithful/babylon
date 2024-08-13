@@ -3,7 +3,9 @@
   flex-direction: column;
   row-gap: 20px;
 
-  h1 {
+  h2 {
+    text-align: center;
+    font-family: "Roboto";
   }
 
   #contact-form {
@@ -21,15 +23,25 @@
     }
 
     input[type="submit"] {
-      color: black;
+      color: white;
       border: none;
-      background-color: #eecc54;
+      background-color: #111110df;
     }
   }
 }
 
 /* Mobile */
 @media (min-width: 300px) {
+  #form-container {
+    h1 {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+  }
+
   #contact-form {
     display: flex;
     flex-direction: column;

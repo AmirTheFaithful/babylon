@@ -38,7 +38,7 @@
 
   /* Mobile */
   @media (min-width: 300px) {
-    section {
+    .head-image {
       h1 {
         font-size: 20px;
       }
@@ -47,7 +47,7 @@
 
   /* Tablets */
   @media (min-width: 481px) {
-    section {
+    .head-image {
       h1 {
         font-size: 24px;
       }
@@ -56,7 +56,7 @@
 
   /* Small Desktop */
   @media (min-width: 769px) {
-    section {
+    .head-image {
       h1 {
         font-size: 28px;
       }
@@ -65,7 +65,7 @@
 
   /* Large desktops */
   @media (min-width: 1025px) {
-    section {
+    .head-image {
       h1 {
         font-size: 32px;
       }
@@ -74,7 +74,7 @@
 
   /* TVs and extra large screens */
   @media (min-width: 1201px) {
-    section {
+    .head-image {
       h1 {
         font-size: 36px;
       }
@@ -90,18 +90,36 @@
   }
 }
 
-.movable {
+.movable-left {
   opacity: 0;
   transform: translateX(-400px);
 }
 
+.movable-right {
+  opacity: 0;
+  transform: translateX(400px);
+}
+
+.movable-top {
+  opacity: 0;
+  transform: translateY(400px);
+}
+
+.movable-bottom {
+  opacity: 0;
+  transform: translateY(-400px);
+}
+
 @media (prefers-reduced-motion: no-preference) {
-  .movable {
-    transition: opacity 3s ease, transform 2s ease;
+  .movable-left,
+  .movable-right,
+  .movable-top,
+  .movable-bottom {
+    transition: opacity 1.5s ease, transform 1.5s ease;
   }
 }
 
 .animated {
   opacity: 1;
-  transform: none;
+  transform: translateX(0);
 }
