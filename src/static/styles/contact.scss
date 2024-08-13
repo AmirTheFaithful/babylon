@@ -1,0 +1,5 @@
+@import "utils";
+
+#contact-page {
+  @include main-image();
+}

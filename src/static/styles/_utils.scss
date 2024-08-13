@@ -18,6 +18,70 @@
   margin-bottom: $y;
 }
 
+@mixin main-image {
+  .head-image {
+    position: relative;
+
+    img {
+      width: 100%;
+      filter: brightness(50%);
+    }
+
+    h1 {
+      position: absolute;
+      bottom: 0;
+      color: white;
+      text-align: center;
+      font-family: "Roboto";
+    }
+  }
+
+  /* Mobile */
+  @media (min-width: 300px) {
+    section {
+      h1 {
+        font-size: 20px;
+      }
+    }
+  }
+
+  /* Tablets */
+  @media (min-width: 481px) {
+    section {
+      h1 {
+        font-size: 24px;
+      }
+    }
+  }
+
+  /* Small Desktop */
+  @media (min-width: 769px) {
+    section {
+      h1 {
+        font-size: 28px;
+      }
+    }
+  }
+
+  /* Large desktops */
+  @media (min-width: 1025px) {
+    section {
+      h1 {
+        font-size: 32px;
+      }
+    }
+  }
+
+  /* TVs and extra large screens */
+  @media (min-width: 1201px) {
+    section {
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
 @function compute-color($color) {
   @if (lightness($color) < 90) {
     @return black;

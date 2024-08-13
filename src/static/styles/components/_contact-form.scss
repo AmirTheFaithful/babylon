@@ -3,23 +3,28 @@
   flex-direction: column;
   row-gap: 20px;
 
-  input,
-  textarea {
-    border: none;
-    box-shadow: 0 0 12px #0006;
-    font-family: "Roboto";
-    border-radius: 8px;
-    outline-style: none;
-    border-left: 4px solid black;
-  }
-  ::placeholder {
-    color: black;
+  h1 {
   }
 
-  input[type="submit"] {
-    color: black;
-    border: none;
-    background-color: #eecc54;
+  #contact-form {
+    input,
+    textarea {
+      border: none;
+      box-shadow: 0 0 12px #0006;
+      font-family: "Roboto";
+      border-radius: 8px;
+      outline-style: none;
+      border-left: 4px solid black;
+    }
+    ::placeholder {
+      color: black;
+    }
+
+    input[type="submit"] {
+      color: black;
+      border: none;
+      background-color: #eecc54;
+    }
   }
 }
 
