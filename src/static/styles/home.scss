@@ -1,8 +1,9 @@
 /* Import components of the home page */
-@import "components/_main-image";
+@import "utils";
 
-#main {
+#home-page {
+  @include main-image();
+
   display: flex;
   flex-direction: column;
-  row-gap: 200px;
 }

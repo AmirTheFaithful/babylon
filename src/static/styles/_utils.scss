@@ -23,6 +23,7 @@
     position: relative;
 
     img {
+      object-fit: fill;
       width: 100%;
       filter: brightness(50%);
     }

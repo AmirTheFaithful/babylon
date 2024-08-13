@@ -1,8 +1,11 @@
 {% extends "base.html" %} {% block title %}
 <title>Головна - Babylon</title>
 {% endblock %} {% block content %}
-<main id="main">
-  {% include "components/_main-image.html" %}
+<main id="home-page">
+  <section class="head-image">
+    <img src="../../static/assets/main-image.jpg" />
+    <h1>ЗБУДУЄМО БУДИНОК ШВИДКО, НЕ ВИТРАЧАЮЧИ ВАШІ ГРОШІ НА РЕМОНТ</h1>
+  </section>
 
   <!-- "Why CLT house is" card -->
   {% include "./components/main-page/_sec_1.html" %}
