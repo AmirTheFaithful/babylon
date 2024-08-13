@@ -1,0 +1,14 @@
+@import "utils";
+
+#about-page {
+  @include main-image();
+
+  .head-image {
+    h1 {
+      color: #fffd;
+      left: 50%;
+      font-size: 100px;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
