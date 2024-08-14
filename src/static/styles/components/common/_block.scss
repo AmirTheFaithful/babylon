@@ -18,6 +18,10 @@
     color: black;
     font-family: "Roboto";
   }
+
+  h1 {
+    text-align: center;
+  }
 }
 
 /* Mobile */
@@ -59,6 +63,7 @@
     @include margin-y(60px);
     padding: 22px;
 
+    align-items: stretch;
     flex-direction: row;
     column-gap: 20px;
 

@@ -1437,6 +1437,9 @@ h1 {
   color: black;
   font-family: "Roboto";
 }
+.block h1 {
+  text-align: center;
+}
 
 /* Mobile */
 @media (min-width: 300px) {
@@ -1473,6 +1476,7 @@ h1 {
     margin-top: 60px;
     margin-bottom: 60px;
     padding: 22px;
+    align-items: stretch;
     flex-direction: row;
     column-gap: 20px;
   }
