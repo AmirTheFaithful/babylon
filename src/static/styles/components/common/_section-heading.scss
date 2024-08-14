@@ -1,11 +1,11 @@
-h1 {
+.section-heading {
   color: #242424df;
   text-align: center;
   font-family: "Roboto";
 }
 
 @media (min-width: 300px) {
-  h1 {
+  .section-heading {
     padding: 6px;
     font-size: 26px;
     margin-bottom: 20px;
@@ -14,7 +14,7 @@ h1 {
 }
 
 @media (min-width: 481px) {
-  h1 {
+  .section-heading {
     font-size: 30px;
     margin-bottom: 20px;
     letter-spacing: 2px;

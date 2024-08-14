@@ -3,7 +3,7 @@
 >{% endblock %} {% block content %}
 <main id="clt-tech-page">
   <section class="main-image">
-    <h1>ІННОВАЦІЙНА ТЕХНОЛОГІЯ CLT</h1>
+    <h1 class="section-heading">ІННОВАЦІЙНА ТЕХНОЛОГІЯ CLT</h1>
   </section>
 
   <!-- That's where the building of whole page starts! -->
@@ -58,16 +58,22 @@
       currentPage.append(block);
     }
 
-    function addLine(imageURL, text) {
+    function addLine(imageURL, headingText, text) {
       const line = document.createElement("section");
+      const textContainer = document.createElement("div");
       const paragraph = document.createElement("p");
+      const heading = document.createElement("h1");
 
       line.className = "content-line";
       line.classList.add("movable-bottom");
       line.style.backgroundImage = `url('${imageURL}')`;
 
       paragraph.innerHTML = text;
-      line.append(paragraph);
+      heading.innerHTML = headingText;
+      textContainer.append(heading);
+      textContainer.append(paragraph);
+
+      line.append(textContainer);
 
       const page = document.querySelector("#clt-tech-page");
       page.append(line);
@@ -86,6 +92,7 @@
 
     addLine(
       "../static/assets/clt-house-2.jpg",
+      "Вогнестійкість",
       "СLT панелі відповідають усім пожежним будівельним нормам. Результати випробувань: REI 60, REI 120, М0."
     );
 
