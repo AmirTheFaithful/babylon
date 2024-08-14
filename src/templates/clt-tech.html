@@ -62,17 +62,27 @@
     function addLine(imageURL, headingText, text) {
       const line = document.createElement("section");
       const textContainer = document.createElement("div");
-      const paragraph = document.createElement("p");
       const heading = document.createElement("h1");
 
       line.className = "content-line";
       line.classList.add("movable-bottom");
       line.style.backgroundImage = `url('${imageURL}')`;
 
-      paragraph.innerHTML = text;
       heading.innerHTML = headingText;
       textContainer.append(heading);
-      textContainer.append(paragraph);
+
+      if (typeof text == "object") {
+        text.map((prgrph) => {
+          const paragraph = document.createElement("p");
+          paragraph.innerHTML = prgrph;
+          textContainer.append(paragraph);
+        });
+      } else {
+        const paragraph = document.createElement("p");
+        paragraph.innerHTML = text;
+
+        textContainer.append(paragraph);
+      }
 
       line.append(textContainer);
 
@@ -91,11 +101,11 @@
       "movable-left"
     );
 
-    addLine(
-      "../static/assets/clt-house-2.jpg",
-      "Вогнестійкість",
-      "СLT панелі відповідають усім пожежним будівельним нормам. Результати випробувань: REI 60, REI 120, М0."
-    );
+    addLine("../static/assets/clt-house-2.jpg", "Вогнестійкість", [
+      "СLT панелі відповідають усім пожежним будівельним нормам. Результати випробувань: REI 60, REI 120, М0.",
+      "Hello!",
+      "Hi!",
+    ]);
 
     addBlock(
       "../static/assets/clt-tech-2.jpg",
