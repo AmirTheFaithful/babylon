@@ -1565,9 +1565,12 @@
   padding: 16px;
   backdrop-filter: brightness(20%);
 }
-.content-line div h1,
-.content-line div p {
+.content-line div h1 {
   color: white;
+  font-family: "Roboto";
+}
+.content-line div p {
+  color: #ccc;
   font-family: "Roboto Condensed";
 }
 
@@ -1578,7 +1581,7 @@
     margin-bottom: 20px;
   }
   .content-line div {
-    row-gap: 16px;
+    row-gap: 12px;
   }
   .content-line div p {
     left: 40px;
@@ -1612,7 +1615,7 @@
     margin-bottom: 60px;
   }
   .content-line div {
-    row-gap: 36px;
+    row-gap: 32px;
   }
   .content-line div p {
     font-size: 28px;
@@ -1642,6 +1645,9 @@
   .content-line {
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+  .content-line div h1 {
+    font-size: 42px;
   }
   .content-line div p {
     font-size: 36px;
