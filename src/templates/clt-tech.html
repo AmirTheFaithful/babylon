@@ -11,13 +11,18 @@
     // The main components of this page
 
     // Gets ready to include block
-    function addBlock(imageURL, text, align, animation = "") {
+    function addBlock(imageURL, headingText, text, align, animation = "") {
       // First, create the section - which will
       // serve as a bulding block of the page
       const block = document.createElement("section");
       // Next - create it's smaller components
       const image = document.createElement("img");
       const textContainer = document.createElement("div");
+      const heading = document.createElement("h2");
+
+      heading.innerHTML = headingText;
+
+      textContainer.append(heading);
 
       if (typeof text == "object") {
         text.map((prgrph) => {
@@ -53,12 +58,55 @@
       currentPage.append(block);
     }
 
+    function addLine(imageURL, text) {
+      const line = document.createElement("section");
+      const paragraph = document.createElement("p");
+
+      line.className = "content-line";
+      line.classList.add("movable-bottom");
+      line.style.backgroundImage = `url('${imageURL}')`;
+
+      paragraph.innerHTML = text;
+      line.append(paragraph);
+
+      const page = document.querySelector("#clt-tech-page");
+      page.append(line);
+    }
+
     addBlock(
-      "../static/assets/clt-house-2.jpg",
+      "../static/assets/clt-tech-1.jpg",
+      "Що таке CLT",
       [
         "CLT (англ. Cross-Laminated Timber) – це будівельний матеріал – клеєна багатошарова деревина з перехресним розташуванням шарів. Панелі CLT складаються з трьох, п’яти, семи або дев’яти шарів деревини хвойних порід. Вони поєднуються між собою конструкційними клеями, утворюючи цілісну панель, із винятковою міцністю та жорсткістю. Ця перехресно-шарова структура забезпечує стійкість до деформації або усадки.",
         "До того ж, збірка будівлі з CLT відбувається легко та швидко! Усе що вам знадобиться, це лише команда з 2-4 осіб, 1 кран, мінімальний набір інструментів і менше ніж тиждень роботи на місці – і ваш новий будинок стане живим втіленням вашої уяви!",
       ],
+      "l",
+      "movable-left"
+    );
+
+    addLine(
+      "../static/assets/clt-house-2.jpg",
+      "СLT панелі відповідають усім пожежним будівельним нормам. Результати випробувань: REI 60, REI 120, М0."
+    );
+
+    addBlock(
+      "../static/assets/clt-tech-2.jpg",
+      "Конструкція стін будинків",
+      [
+        "Процес виготовлення включає в себе кілька етапів:",
+        "1. Спочатку, дерев’яні дошки підготовлюють і сушать у спеціальних камерах, для досягнення відповідної вологості 10% (+/- 2%).",
+        "2. Потім вони зрощуються, обрізаються точно за розміром і укладаються одна на одну, з нанесенням клею між кожним шаром.",
+        "3. Наступним кроком є використання гідравлічного пресу, для з’єднання шарів під високим тиском. Плита, що випускається на заводі, має розміри 18*3,5м.",
+        "4. Наприкінці процесу, CLT-панелі обрізаються, шліфуються та обробляються на верстаті, з програмним забезпеченням, до точних розмірів та форми (за проектом), що максимально спрощує складання та встановлення на місці зведення будівлі.",
+      ],
+      "l",
+      "movable-right"
+    );
+
+    addBlock(
+      "../static/assets/clt-tech-3.jpg",
+      "Швидкість будівництва",
+      "CLT – це матеріал, який швидко монтується, завдяки завчасній підготовці деталей будівлі на заводі, по розробленому архітекторами проєкту. Деталі вирізаються на високоточних станках з програмним забезпеченням, а для їх монтажу необхідна мінімальна кількість монтажників та механізмів. Дім загальною площею 136 м2 було побудовано всього за 7 днів, включаючи повне внутрішнє оздоблення.",
       "l",
       "movable-left"
     );

@@ -1,0 +1,66 @@
+@import "../../utils";
+
+.content-line {
+  width: 100%;
+  background-size: cover;
+
+  p {
+    color: white;
+    padding: 16px;
+    font-family: "Roboto Condensed";
+    backdrop-filter: brightness(20%);
+  }
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  .content-line {
+    @include margin-y(20px);
+
+    p {
+      left: 40px;
+      bottom: 16px;
+      font-size: 20px;
+    }
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+  .content-line {
+    @include margin-y(40px);
+    p {
+      font-size: 24px;
+    }
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+  .content-line {
+    @include margin-y(60px);
+    p {
+      font-size: 28px;
+    }
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+  .content-line {
+    @include margin-y(80px);
+    p {
+      font-size: 32px;
+    }
+  }
+}
+
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  .content-line {
+    @include margin-y(100px);
+    p {
+      font-size: 36px;
+    }
+  }
+}

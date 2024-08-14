@@ -1,11 +1,17 @@
+@import "../../utils";
+
 .block {
   width: 100%;
   display: flex;
   align-items: center;
 
   img {
-    object-fit: cover;
-    width: 50%;
+    width: 100%;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
   }
 
   p {
@@ -17,15 +23,14 @@
 /* Mobile */
 @media (min-width: 300px) {
   .block {
+    @include margin-y(20px);
+    padding: 16px;
+
     flex-direction: column;
     row-gap: 16px;
 
-    img {
-      width: 95%;
-    }
-
     p {
-      padding: 16px;
+      padding: 12px;
       font-size: 20px;
     }
   }
@@ -34,8 +39,16 @@
 /* Tablets */
 @media (min-width: 481px) {
   .block {
+    @include margin-y(40px);
+    padding: 32px;
+
+    img {
+      width: 80%;
+    }
+
     p {
-      font-size: 20px;
+      padding: 16px;
+      font-size: 26px;
     }
   }
 }
@@ -43,11 +56,20 @@
 /* Small Desktop */
 @media (min-width: 769px) {
   .block {
+    @include margin-y(60px);
+    padding: 22px;
+
     flex-direction: row;
     column-gap: 20px;
 
+    div {
+      row-gap: 20px;
+    }
+
     p {
-      font-size: 24px;
+      width: 360px;
+      padding: 0;
+      font-size: 20px;
     }
   }
 }
@@ -55,8 +77,15 @@
 /* Large desktops */
 @media (min-width: 1025px) {
   .block {
+    @include margin-y(80px);
+
+    div {
+      row-gap: 30px;
+    }
+
     p {
-      font-size: 28px;
+      width: 600px;
+      font-size: 24px;
     }
   }
 }
@@ -64,8 +93,15 @@
 /* TVs and extra large screens */
 @media (min-width: 1201px) {
   .block {
+    @include margin-y(100px);
+
+    div {
+      row-gap: 40px;
+    }
+
     p {
-      font-size: 32px;
+      width: 800px;
+      font-size: 26px;
     }
   }
 }
