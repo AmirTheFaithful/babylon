@@ -15,18 +15,8 @@ function addBlock(imageURL, headingText, text, align, animation = "") {
 
   textContainer.append(heading);
 
-  if (typeof text == "object") {
-    text.map((prgrph) => {
-      const paragraph = document.createElement("p");
-      paragraph.innerHTML = prgrph;
-      textContainer.append(paragraph);
-    });
-  } else {
-    const paragraph = document.createElement("p");
-    paragraph.innerHTML = text;
-
-    textContainer.append(paragraph);
-  }
+  // Call the text manager helper function
+  placeText(text, textContainer);
 
   image.src = imageURL;
 
@@ -61,21 +51,26 @@ function addLine(imageURL, headingText, text) {
   heading.innerHTML = headingText;
   textContainer.append(heading);
 
-  if (typeof text == "object") {
-    text.map((prgrph) => {
-      const paragraph = document.createElement("p");
-      paragraph.innerHTML = prgrph;
-      textContainer.append(paragraph);
-    });
-  } else {
-    const paragraph = document.createElement("p");
-    paragraph.innerHTML = text;
-
-    textContainer.append(paragraph);
-  }
+  // Similarly to the "addBlock" function, call the text manager function here
+  placeText(text, textContainer);
 
   line.append(textContainer);
 
   const page = document.querySelector("#clt-tech-page");
   page.append(line);
 }
+
+const placeText = (text, container) => {
+  if (typeof text == "object") {
+    text.map((prgrph) => {
+      const paragraph = document.createElement("p");
+      paragraph.innerHTML = prgrph;
+      container.append(paragraph);
+    });
+  } else {
+    const paragraph = document.createElement("p");
+    paragraph.innerHTML = text;
+
+    container.append(paragraph);
+  }
+};
