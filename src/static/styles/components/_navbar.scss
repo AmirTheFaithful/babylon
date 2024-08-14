@@ -83,7 +83,7 @@
 /* Small Desktop */
 @media (min-width: 769px) {
   #navbar {
-    @include padding-x(40px);
+    @include padding-x(20px);
     align-items: normal;
     height: 80px;
 
@@ -98,7 +98,7 @@
         @include padding-x(12px);
         display: flex;
 
-        font-size: 16px;
+        font-size: 20px;
       }
     }
 
@@ -120,7 +120,7 @@
 
     #nav-links {
       a {
-        @include padding-x(12px);
+        @include padding-x(16px);
         font-size: 24px;
       }
     }
@@ -129,7 +129,13 @@
 
 /* TVs and extra large screens */
 @media (min-width: 1201px) {
-  a {
-    font-size: 26px;
+  #navbar {
+    @include padding-x(60px);
+    #nav-links {
+      @include padding-x(24px);
+      a {
+        font-size: 26px;
+      }
+    }
   }
 }

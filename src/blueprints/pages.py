@@ -25,3 +25,7 @@ def stone_houses() -> str:
 @main_bp.route("/projects")
 def projects() -> str:
   return render_template("projects.html")
+
+@main_bp.route("/projects/[project_name]")
+def project() -> str:
+  return render_template("project.html")

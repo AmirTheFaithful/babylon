@@ -133,8 +133,8 @@
 /* Small Desktop */
 @media (min-width: 769px) {
   #navbar {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     align-items: normal;
     height: 80px;
   }
@@ -148,7 +148,7 @@
     padding-left: 12px;
     padding-right: 12px;
     display: flex;
-    font-size: 16px;
+    font-size: 20px;
   }
   #navbar #hamburger {
     display: none;
@@ -165,14 +165,22 @@
     width: 160px;
   }
   #navbar #nav-links a {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
     font-size: 24px;
   }
 }
 /* TVs and extra large screens */
 @media (min-width: 1201px) {
-  a {
+  #navbar {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  #navbar #nav-links {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  #navbar #nav-links a {
     font-size: 26px;
   }
 }
