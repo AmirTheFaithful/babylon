@@ -24,14 +24,17 @@
   .content-line {
     @include margin-y(20px);
 
-    p {
-      left: 40px;
-      bottom: 16px;
-      font-size: 16px;
-    }
+    div {
+      row-gap: 16px;
+      p {
+        left: 40px;
+        bottom: 16px;
+        font-size: 16px;
+      }
 
-    h1 {
-      font-size: 20px;
+      h1 {
+        font-size: 20px;
+      }
     }
   }
 }
@@ -40,12 +43,17 @@
 @media (min-width: 481px) {
   .content-line {
     @include margin-y(40px);
-    p {
-      font-size: 24px;
-    }
 
-    h1 {
-      font-size: 28px;
+    div {
+      row-gap: 24px;
+
+      p {
+        font-size: 24px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
     }
   }
 }
@@ -54,12 +62,17 @@
 @media (min-width: 769px) {
   .content-line {
     @include margin-y(60px);
-    p {
-      font-size: 28px;
-    }
 
-    h1 {
-      font-size: 32px;
+    div {
+      row-gap: 36px;
+
+      p {
+        font-size: 28px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
     }
   }
 }
@@ -68,12 +81,17 @@
 @media (min-width: 1025px) {
   .content-line {
     @include margin-y(80px);
-    p {
-      font-size: 32px;
-    }
 
-    h1 {
-      font-size: 36px;
+    div {
+      padding: 26px;
+
+      p {
+        font-size: 32px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
     }
   }
 }
@@ -82,8 +100,11 @@
 @media (min-width: 1201px) {
   .content-line {
     @include margin-y(100px);
-    p {
-      font-size: 36px;
+
+    div {
+      p {
+        font-size: 36px;
+      }
     }
   }
 }
