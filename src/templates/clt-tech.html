@@ -6,89 +6,11 @@
     <h1 class="section-heading">ІННОВАЦІЙНА ТЕХНОЛОГІЯ CLT</h1>
   </section>
 
-  <!-- That's where the building of whole page starts! -->
+  <!-- Import the page content builder algorithm -->
+  <script src="../static/scripts/content-builder.js"></script>
+
   <script>
-    // The main components of this page
-
-    // Gets ready to include block
-    function addBlock(imageURL, headingText, text, align, animation = "") {
-      // First, create the section - which will
-      // serve as a bulding block of the page
-      const block = document.createElement("section");
-      // Next - create it's smaller components
-      const image = document.createElement("img");
-      const textContainer = document.createElement("div");
-      const heading = document.createElement("h2");
-
-      heading.className = "block-heading";
-      heading.innerHTML = headingText;
-
-      textContainer.append(heading);
-
-      if (typeof text == "object") {
-        text.map((prgrph) => {
-          const paragraph = document.createElement("p");
-          paragraph.innerHTML = prgrph;
-          textContainer.append(paragraph);
-        });
-      } else {
-        const paragraph = document.createElement("p");
-        paragraph.innerHTML = text;
-
-        textContainer.append(paragraph);
-      }
-
-      image.src = imageURL;
-
-      if (align == "l") {
-        block.append(image);
-        block.append(textContainer);
-      } else if (align == "r") {
-        block.append(textContainer);
-        block.append(image);
-      }
-
-      // Style block itself
-      block.className = "block";
-
-      if (animation.includes("movable")) {
-        block.classList.add(animation);
-      }
-
-      const currentPage = document.querySelector("#clt-tech-page");
-      currentPage.append(block);
-    }
-
-    function addLine(imageURL, headingText, text) {
-      const line = document.createElement("section");
-      const textContainer = document.createElement("div");
-      const heading = document.createElement("h1");
-
-      line.className = "content-line";
-      line.classList.add("movable-bottom");
-      line.style.backgroundImage = `url('${imageURL}')`;
-
-      heading.innerHTML = headingText;
-      textContainer.append(heading);
-
-      if (typeof text == "object") {
-        text.map((prgrph) => {
-          const paragraph = document.createElement("p");
-          paragraph.innerHTML = prgrph;
-          textContainer.append(paragraph);
-        });
-      } else {
-        const paragraph = document.createElement("p");
-        paragraph.innerHTML = text;
-
-        textContainer.append(paragraph);
-      }
-
-      line.append(textContainer);
-
-      const page = document.querySelector("#clt-tech-page");
-      page.append(line);
-    }
+    // The main components of this page are - blocks and thin lines
 
     addBlock(
       "../static/assets/clt-tech-1.jpg",
