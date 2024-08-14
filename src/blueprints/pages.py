@@ -16,7 +16,7 @@ def about() -> str:
 
 @main_bp.route("/clt-tech")
 def clt_tech() -> str:
-  return render_template("clt_tech.html")
+  return render_template("clt-tech.html")
 
 @main_bp.route("/stone-houses")
 def stone_houses() -> str:

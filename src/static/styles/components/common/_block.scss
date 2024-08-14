@@ -1,0 +1,71 @@
+.block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  img {
+    object-fit: cover;
+    width: 50%;
+  }
+
+  p {
+    color: black;
+    font-family: "Roboto";
+  }
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  .block {
+    flex-direction: column;
+    row-gap: 16px;
+
+    img {
+      width: 95%;
+    }
+
+    p {
+      padding: 16px;
+      font-size: 20px;
+    }
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+  .block {
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+  .block {
+    flex-direction: row;
+    column-gap: 20px;
+
+    p {
+      font-size: 24px;
+    }
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+  .block {
+    p {
+      font-size: 28px;
+    }
+  }
+}
+
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  .block {
+    p {
+      font-size: 32px;
+    }
+  }
+}

@@ -2,10 +2,7 @@
 <title>Головна - Babylon</title>
 {% endblock %} {% block content %}
 <main id="home-page">
-  <section class="head-image">
-    <img src="../../static/assets/main-image.jpg" />
-    <h1>ЗБУДУЄМО БУДИНОК ШВИДКО, НЕ ВИТРАЧАЮЧИ ВАШІ ГРОШІ НА РЕМОНТ</h1>
-  </section>
+  {% include "components/_main-image.html" %}
 
   <!-- "Why CLT house is" card -->
   {% include "./components/main-page/_sec_1.html" %}

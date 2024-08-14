@@ -2,6 +2,66 @@
   CLT Технологія - Babylon</title
 >{% endblock %} {% block content %}
 <main id="clt-tech-page">
-  <section class="main-image"></section>
+  <section class="main-image">
+    <h1>ІННОВАЦІЙНА ТЕХНОЛОГІЯ CLT</h1>
+  </section>
+
+  <!-- That's where the building of whole page starts! -->
+  <script>
+    // The main components of this page
+
+    // Gets ready to include block
+    function addBlock(imageURL, text, align, animation = "") {
+      // First, create the section - which will
+      // serve as a bulding block of the page
+      const block = document.createElement("section");
+      // Next - create it's smaller components
+      const image = document.createElement("img");
+      const textContainer = document.createElement("div");
+
+      if (typeof text == "object") {
+        text.map((prgrph) => {
+          const paragraph = document.createElement("p");
+          paragraph.innerHTML = prgrph;
+          textContainer.append(paragraph);
+        });
+      } else {
+        const paragraph = document.createElement("p");
+        paragraph.innerHTML = text;
+
+        textContainer.append(paragraph);
+      }
+
+      image.src = imageURL;
+
+      if (align == "l") {
+        block.append(image);
+        block.append(textContainer);
+      } else if (align == "r") {
+        block.append(textContainer);
+        block.append(image);
+      }
+
+      // Style block itself
+      block.className = "block";
+
+      if (animation.includes("movable")) {
+        block.classList.add(animation);
+      }
+
+      const currentPage = document.querySelector("#clt-tech-page");
+      currentPage.append(block);
+    }
+
+    addBlock(
+      "../static/assets/clt-house-2.jpg",
+      [
+        "CLT (англ. Cross-Laminated Timber) – це будівельний матеріал – клеєна багатошарова деревина з перехресним розташуванням шарів. Панелі CLT складаються з трьох, п’яти, семи або дев’яти шарів деревини хвойних порід. Вони поєднуються між собою конструкційними клеями, утворюючи цілісну панель, із винятковою міцністю та жорсткістю. Ця перехресно-шарова структура забезпечує стійкість до деформації або усадки.",
+        "До того ж, збірка будівлі з CLT відбувається легко та швидко! Усе що вам знадобиться, це лише команда з 2-4 осіб, 1 кран, мінімальний набір інструментів і менше ніж тиждень роботи на місці – і ваш новий будинок стане живим втіленням вашої уяви!",
+      ],
+      "l",
+      "movable-left"
+    );
+  </script>
 </main>
 {% endblock %}
