@@ -1436,12 +1436,10 @@
   display: flex;
   flex-direction: column;
 }
-.block p {
+.block div .block-heading,
+.block div p {
   color: black;
   font-family: "Roboto";
-}
-.block h1 {
-  text-align: center;
 }
 
 /* Mobile */
@@ -1452,6 +1450,9 @@
     padding: 16px;
     flex-direction: column;
     row-gap: 16px;
+  }
+  .block .block-heading {
+    font-size: 26px;
   }
   .block p {
     padding: 12px;

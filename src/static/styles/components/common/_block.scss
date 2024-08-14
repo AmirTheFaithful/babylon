@@ -12,15 +12,12 @@
   div {
     display: flex;
     flex-direction: column;
-  }
 
-  p {
-    color: black;
-    font-family: "Roboto";
-  }
-
-  h1 {
-    text-align: center;
+    .block-heading,
+    p {
+      color: black;
+      font-family: "Roboto";
+    }
   }
 }
 
@@ -32,6 +29,10 @@
 
     flex-direction: column;
     row-gap: 16px;
+
+    .block-heading {
+      font-size: 26px;
+    }
 
     p {
       padding: 12px;
