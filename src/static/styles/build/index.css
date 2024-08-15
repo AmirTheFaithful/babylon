@@ -1447,7 +1447,7 @@
 .block div .block-heading,
 .block div p {
   color: black;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Roboto";
 }
 
 /* Mobile */
@@ -1465,6 +1465,7 @@
   .block p {
     padding: 12px;
     font-size: 20px;
+    line-height: 36px;
   }
 }
 /* Tablets */
@@ -1579,11 +1580,11 @@
 }
 .content-line div h1 {
   color: white;
-  font-family: "Roboto";
+  font-family: "Roboto", "Montserrat";
 }
 .content-line div p {
   color: #ccc;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Montserrat";
 }
 
 /* Mobile */
