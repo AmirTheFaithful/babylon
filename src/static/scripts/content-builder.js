@@ -1,5 +1,7 @@
 // That's where the building of whole page starts!
 
+let currentPageID;
+
 // Gets ready to include block
 function addBlock(imageURL, headingText, text, align, animation = "") {
   // First, create the section - which will
@@ -35,7 +37,7 @@ function addBlock(imageURL, headingText, text, align, animation = "") {
     block.classList.add(animation);
   }
 
-  const currentPage = document.querySelector("#clt-tech-page");
+  const currentPage = document.querySelector(`#${currentPageID}`);
   currentPage.append(block);
 }
 
@@ -56,8 +58,8 @@ function addLine(imageURL, headingText, text) {
 
   line.append(textContainer);
 
-  const page = document.querySelector("#clt-tech-page");
-  page.append(line);
+  const currentPage = document.querySelector(`#${currentPageID}`);
+  currentPage.append(line);
 }
 
 const placeText = (text, container) => {
