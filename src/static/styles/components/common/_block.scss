@@ -16,7 +16,7 @@
     .block-heading,
     p {
       color: black;
-      font-family: "Roboto";
+      font-family: "Montserrat";
     }
   }
 }
@@ -45,6 +45,7 @@
 @media (min-width: 481px) {
   .block {
     @include margin-y(40px);
+    align-items: stretch;
     padding: 32px;
 
     img {
@@ -66,7 +67,7 @@
 
     align-items: stretch;
     flex-direction: row;
-    column-gap: 20px;
+    column-gap: 30px;
 
     div {
       row-gap: 20px;
@@ -87,6 +88,10 @@
 
     div {
       row-gap: 30px;
+    }
+
+    .block-heading {
+      font-size: 40px;
     }
 
     p {
