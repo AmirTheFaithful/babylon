@@ -25,9 +25,12 @@ function addBlock(imageURL, headingText, text, align, animation = "") {
   if (align == "l") {
     block.append(image);
     block.append(textContainer);
-  } else if (align == "r") {
+  } else if (align == "r" && window.innerWidth >= 769) {
     block.append(textContainer);
     block.append(image);
+  } else if (align == "r" && window.innerWidth < 769) {
+    block.append(image);
+    block.append(textContainer);
   }
 
   // Style block itself
