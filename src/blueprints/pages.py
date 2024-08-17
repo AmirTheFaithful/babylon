@@ -30,12 +30,17 @@ def projects() -> str:
 def project(project_id: str) -> str:
   from json import loads
 
+  # Fetch objects from the data file
   with open("src/blueprints/projects.json") as file:
     file_contents = file.read()
 
+  # Transform JSON objects to Python dicts
   projects = loads(file_contents)
-  for name, value in projects[0]["params"].items():
-    print(f"{name}: {value}")
+
+  # Find requested project to render
+  index = int(project_id) - 1
+  # print(int(project_id))
+  proj = projects[index]
 
   # First, find the project by it's provided ID
-  return render_template("project.html", project=projects[0])
+  return render_template("project.html", project=proj)

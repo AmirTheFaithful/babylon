@@ -63,12 +63,12 @@
   {
     "name": "Елегія",
     "images": {
-      "1": "../static/assets/proj-2/img-1.jpg",
-      "2": "../static/assets/proj-2/img-2.jpg"
+      "1": "../static/assets/proj-3/img-1.jpg",
+      "2": "../static/assets/proj-3/img-2.jpg"
     },
     "blueprints": {
-      "1": "../static/assets/proj-2/blueprint.jpg",
-      "2": "../static/assets/proj-2/blueprint-2.jpg"
+      "1": "../static/assets/proj-3/blueprint.jpg",
+      "2": "../static/assets/proj-3/blueprint-2.jpg"
     },
     "title": "Невеликий будинок з мансардою, функціональний та економічний в будівництві. Над входом у будинок розташовано невеликий навіс зі сталевої конструкції.",
     "description": {
