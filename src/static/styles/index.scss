@@ -17,6 +17,8 @@
  * in many places of the prject */
 @import "components/common/section-heading";
 @import "components/common/link-btn";
+@import "./components/common/block";
+@import "./components/common/content-line";
 
 /* Import pages */
 @import "home";
@@ -24,8 +26,7 @@
 @import "about";
 @import "clt-tech";
 @import "stone-houses";
-@import "./components/common/block";
-@import "./components/common/content-line";
+@import "project-page";
 
 * {
   margin: 0;

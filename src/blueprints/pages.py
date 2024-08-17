@@ -26,6 +26,16 @@ def stone_houses() -> str:
 def projects() -> str:
   return render_template("projects.html")
 
-@main_bp.route("/projects/[project_name]")
-def project() -> str:
-  return render_template("project.html")
+@main_bp.route("/projects/<project_id>")
+def project(project_id: str) -> str:
+  from json import loads
+
+  with open("src/blueprints/projects.json") as file:
+    file_contents = file.read()
+
+  projects = loads(file_contents)
+  for name, value in projects[0]["params"].items():
+    print(f"{name}: {value}")
+
+  # First, find the project by it's provided ID
+  return render_template("project.html", project=projects[0])

@@ -1,9 +1,49 @@
-{% extends "base.html" %} {% block title %}<title>{{ title }}</title>{% endblock
-%} {% block content %}
+{% extends "base.html" %} {% block title %}<title>
+  Проєкт {{ project.name }} - Babylon</title
+>{% endblock %} {% block content %}
 <main id="project-page">
-  <section id="project-image">
-    <img src="{{ content.image_URL }}" />
-    <h1 class="head-image">{{ content.project_name }}</h1>
+  <section class="head-image">
+    <img src="{{ project.images['1'] }}" />
+    <h1>{{ project.name }}</h1>
+    <h2>{{ project.params.square }}</h2>
   </section>
+
+  <section class="title-sec movable-left">
+    <h3>{{ project.title }}</h3>
+  </section>
+
+  <section class="proj-imgs movable-top">
+    <h1 class="section-heading">ФОТО</h1>
+    <div class="images-container">
+      {% for number, img_url in project.images.items() %}
+      <img src="{{ img_url }}" />
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="proj-desc movable-right">
+    <h1 class="section-heading">ОПИС</h1>
+    {% for text in project.description.values() %}
+    <p>{{ text }}</p>
+    {% endfor %}
+  </section>
+
+  <section class="proj-bps movable-bottom">
+    <h1 class="section-heading">ПЛАНУВАННЯ</h1>
+
+    {% if project.blueprints['2'] %}
+    <div class="bps-container">
+      {% for bp_url in project.blueprints.values() %}
+      <img src="{{ bp_url }}" />
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="bp-container">
+      <img src="{{ project.blueprints['1'] }}" />
+    </div>
+    {% endif %}
+  </section>
+
+  <a id="order-btn" href="/contact">Замовити</a>
 </main>
 {% endblock %}
