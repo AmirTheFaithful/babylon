@@ -2,47 +2,20 @@
   Проєкт {{ project.name }} - Babylon</title
 >{% endblock %} {% block content %}
 <main id="project-page">
-  <section class="head-image">
-    <img src="{{ project.images['1'] }}" />
-    <h1>{{ project.name }}</h1>
-    <h2>{{ project.params.square }}</h2>
-  </section>
+  <!-- The first image of the project as the head image -->
+  {% include "components/project-page/_project-heading.html" %}
 
-  <section class="title-sec movable-left">
-    <h3>{{ project.title }}</h3>
-  </section>
+  <!-- Title of the project -->
+  {% include "components/project-page/_title-sec.html" %}
 
-  <section class="proj-imgs movable-top">
-    <h1 class="section-heading">ФОТО</h1>
-    <div class="images-container">
-      {% for number, img_url in project.images.items() %}
-      <img src="{{ img_url }}" />
-      {% endfor %}
-    </div>
-  </section>
+  <!-- All images of the project as clickable cards -->
+  {% include "components/project-page/_proj-imgs.html" %}
 
-  <section class="proj-desc movable-right">
-    <h1 class="section-heading">ОПИС</h1>
-    {% for text in project.description.values() %}
-    <p>{{ text }}</p>
-    {% endfor %}
-  </section>
+  <!-- Description of the project as separated paragraphs -->
+  {% include "components/project-page/_proj-desc.html" %}
 
-  <section class="proj-bps movable-bottom">
-    <h1 class="section-heading">ПЛАНУВАННЯ</h1>
-
-    {% if project.blueprints['2'] %}
-    <div class="bps-container">
-      {% for bp_url in project.blueprints.values() %}
-      <img src="{{ bp_url }}" />
-      {% endfor %}
-    </div>
-    {% else %}
-    <div class="bp-container">
-      <img src="{{ project.blueprints['1'] }}" />
-    </div>
-    {% endif %}
-  </section>
+  <!-- Blueprint or blueprintS of the project -->
+  {% include "components/project-page/_proj-bps.html" %}
 
   <a id="order-btn" href="/contact">Замовити</a>
 </main>

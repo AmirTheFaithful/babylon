@@ -1,0 +1,15 @@
+<section id="proj-bps" class="movable-bottom">
+  <h1 class="section-heading">ПЛАНУВАННЯ</h1>
+
+  {% if project.blueprints['2'] %}
+  <div id="bps-container">
+    {% for bp_url in project.blueprints.values() %}
+    <img src="{{ bp_url }}" />
+    {% endfor %}
+  </div>
+  {% else %}
+  <div id="bp-container">
+    <img src="{{ project.blueprints['1'] }}" />
+  </div>
+  {% endif %}
+</section>

@@ -1762,41 +1762,41 @@
   font-family: "Montserrat";
   font-weight: 700;
 }
-#project-page .title-sec {
+#project-page #title-sec {
   color: black;
   text-align: center;
   font-family: "Roboto", "Montserrat";
 }
-#project-page .proj-imgs .images-container {
+#project-page #proj-imgs #images-container {
   padding: 20px;
   display: flex;
   column-gap: 10px;
 }
-#project-page .proj-imgs .images-container img {
+#project-page #proj-imgs #images-container img {
   width: 200px;
 }
-#project-page .proj-desc p {
+#project-page #proj-desc p {
   margin-top: 16px;
   margin-bottom: 16px;
   padding: 20px;
   font-family: "Montserrat", "Roboto";
 }
-#project-page .proj-bps {
+#project-page #proj-bps {
   padding: 20px;
 }
-#project-page .proj-bps .bp-container {
+#project-page #proj-bps #bp-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#project-page .proj-bps .bp-container img {
+#project-page #proj-bps #bp-container img {
   width: 300px;
   height: 300px;
 }
-#project-page .proj-bps .bps-container {
+#project-page #proj-bps #bps-container {
   display: flex;
 }
-#project-page .proj-bps .bps-container img {
+#project-page #proj-bps #bps-container img {
   width: 200px;
 }
 

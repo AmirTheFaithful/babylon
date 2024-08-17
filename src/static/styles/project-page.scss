@@ -19,7 +19,7 @@
     }
   }
 
-  .title-sec {
+  #title-sec {
     color: black;
     text-align: center;
     font-family: "Roboto", "Montserrat";
@@ -27,8 +27,8 @@
     // background-color: #222e;
   }
 
-  .proj-imgs {
-    .images-container {
+  #proj-imgs {
+    #images-container {
       padding: 20px;
       display: flex;
       column-gap: 10px;
@@ -39,7 +39,7 @@
     }
   }
 
-  .proj-desc {
+  #proj-desc {
     p {
       @include margin-y(16px);
       padding: 20px;
@@ -47,10 +47,10 @@
     }
   }
 
-  .proj-bps {
+  #proj-bps {
     padding: 20px;
 
-    .bp-container {
+    #bp-container {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -61,7 +61,7 @@
       }
     }
 
-    .bps-container {
+    #bps-container {
       display: flex;
 
       img {
