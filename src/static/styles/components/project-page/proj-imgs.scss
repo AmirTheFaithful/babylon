@@ -2,6 +2,11 @@
   #images-container {
     display: flex;
     flex-direction: row;
+
+    img {
+      border-radius: 12px;
+      box-shadow: 4px 6px 26px #2226, inset 0 0 64px #222e;
+    }
   }
 }
 
@@ -11,7 +16,7 @@
     #images-container {
       flex-direction: column;
       align-items: center;
-      row-gap: 20px;
+      row-gap: 60px;
 
       img {
         width: 400px;
@@ -24,7 +29,7 @@
 @media (min-width: 481px) {
   #proj-imgs {
     #images-container {
-      row-gap: 30px;
+      row-gap: 90px;
 
       img {
         width: 420px;
@@ -68,9 +73,7 @@
       img {
         width: 300px;
         cursor: pointer;
-        box-shadow: 4px 6px 26px #2226, inset 0 0 64px #222e;
         transition: transform 0.3s linear, filter 0.3s linear;
-        border-radius: 12px;
 
         &:hover {
           transform: scale(96%);

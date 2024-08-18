@@ -1,0 +1,156 @@
+#proj-bps {
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #bps-container {
+    justify-content: space-between;
+  }
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  #proj-bps {
+    #bps-container {
+      @include padding-x(16px);
+
+      img {
+        width: 200px;
+      }
+    }
+
+    #bp-container {
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+  #proj-bps {
+    #bps-container {
+      img {
+        width: 220px;
+      }
+    }
+
+    #bp-container {
+      img {
+        width: 450px;
+        height: 450px;
+      }
+    }
+  }
+}
+
+@media (min-width: 501px) {
+  #proj-bps {
+    #bps-container {
+      @include padding-x(20px);
+
+      img {
+        width: 230px;
+      }
+    }
+  }
+}
+
+@media (min-width: 601px) {
+  #proj-bps {
+    #bps-container {
+      @include padding-x(30px);
+
+      img {
+        width: 260px;
+      }
+    }
+  }
+}
+
+@media (min-width: 701px) {
+  #proj-bps {
+    #bps-container {
+      @include padding-x(40px);
+
+      img {
+        width: 300px;
+      }
+    }
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+  #proj-bps {
+    #bps-container {
+      @include padding-x(40px);
+
+      img {
+        width: 320px;
+      }
+    }
+  }
+}
+
+@media (min-width: 820px) {
+  #proj-bps {
+    #bps-container {
+      @include padding-x(45px);
+
+      img {
+        width: 360px;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  #proj-bps {
+    #bps-container {
+      img {
+        width: 400px;
+      }
+    }
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+  #proj-bps {
+    #bps-container {
+      img {
+        width: 450px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  #proj-bps {
+    #bps-container {
+      @include padding-x(60px);
+
+      img {
+        width: 500px;
+      }
+    }
+  }
+}
+
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  #proj-bps {
+    #bps-container {
+      @include padding-x(80px);
+
+      img {
+        width: 520px;
+      }
+    }
+  }
+}
