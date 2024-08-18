@@ -1,0 +1,39 @@
+#title-sec {
+  color: black;
+  text-align: center;
+  font-family: "Roboto", "Montserrat";
+  // box-shadow: 0 0 26px #222e;
+  // background-color: #222e;
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  #title-sec {
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+  #title-sec {
+    padding: 20px;
+    font-size: 24px;
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+  #title-sec {
+    padding: 24px;
+    font-size: 28px;
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+  #title-sec {
+    padding: 28px;
+    font-size: 32px;
+  }
+}

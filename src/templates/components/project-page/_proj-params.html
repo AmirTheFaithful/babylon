@@ -1,0 +1,57 @@
+<section id="proj-params">
+  <h1 class="section-heading">МЕТРАЖ</h1>
+  {% if project.params['1-floor'] %}
+  <div id="multiple-floors-params">
+    <p class="floor-mark">1-ИЙ ПОВЕРХ:</p>
+    <div id="single-floor-params">
+      <!-- Column of the names of the rooms -->
+      <div class="param-col">
+        {% for room in project.params['1-floor'].keys() %}
+        <p>{{ room }}</p>
+        {% endfor %}
+      </div>
+
+      <!-- Column of the digits of the size -->
+      <div class="param-col">
+        {% for size in project.params['1-floor'].values() %}
+        <p>{{ size }}</p>
+        {% endfor %}
+      </div>
+    </div>
+
+    <p class="floor-mark">2-ИЙ ПОВЕРХ:</p>
+    <div id="single-floor-params">
+      <!-- Column of the names of the rooms -->
+      <div class="param-col">
+        {% for room in project.params['2-floor'].keys() %}
+        <p>{{ room }}</p>
+        {% endfor %}
+      </div>
+
+      <!-- Column of the digits of the size -->
+      <div class="param-col">
+        {% for size in project.params['2-floor'].values() %}
+        <p>{{ size }}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  {% else %}
+  <div id="single-floor-params">
+    <!-- Column of the names of the rooms -->
+    <div class="param-col">
+      {% for room in project.params.keys() %}
+      <p>{{ room }}</p>
+      {% endfor %}
+    </div>
+
+    <!-- Column of the digits of the size -->
+    <div class="param-col">
+      {% for size in project.params.values() %}
+      <p>{{ size }}</p>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+</section>

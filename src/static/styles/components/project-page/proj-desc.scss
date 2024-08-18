@@ -1,0 +1,56 @@
+#proj-desc {
+  p {
+    font-family: "Montserrat", "Roboto";
+  }
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  #proj-desc {
+    p {
+      padding: 20px;
+      font-size: 20px;
+    }
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+  #proj-desc {
+    p {
+      padding: 30px;
+      font-size: 24px;
+    }
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+  #proj-desc {
+    p {
+      @include padding-y(30px);
+      @include margin-x(auto);
+      width: 600px;
+      font-size: 28px;
+    }
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+  #proj-desc {
+    p {
+      width: 800px;
+      font-size: 32px;
+    }
+  }
+}
+
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  #proj-desc {
+    p {
+      width: 1000px;
+    }
+  }
+}

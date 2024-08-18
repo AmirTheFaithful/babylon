@@ -1,0 +1,152 @@
+#proj-params {
+  #single-floor-params {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      text-align: center;
+      font-family: "Arsenal SC";
+    }
+  }
+
+  .floor-mark {
+    text-align: center;
+
+    font: {
+      family: "Arsenal SC", "Roboto", "Roboto Condensed", "Montserrat", "Oswald";
+      font-weight: 400;
+    }
+  }
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  #proj-params {
+    #single-floor-params {
+      @include padding-x(40px);
+
+      p {
+        @include margin-y(16px);
+        font-size: 20px;
+      }
+    }
+
+    .floor-mark {
+      font-size: 22px;
+      margin-top: 36px;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+  #proj-params {
+    #single-floor-params {
+      @include padding-x(30px);
+
+      p {
+        @include margin-y(16px);
+        font-size: 26px;
+      }
+    }
+
+    .floor-mark {
+      font-size: 32px;
+    }
+  }
+}
+
+@media (min-width: 520px) {
+  #proj-params {
+    #single-floor-params {
+      p {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+@media (min-width: 620px) {
+  #proj-params {
+    #single-floor-params {
+      @include padding-x(40px);
+
+      p {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+  #proj-params {
+    #single-floor-params {
+      p {
+        @include margin-y(20px);
+        font-size: 36px;
+      }
+    }
+
+    .floor-mark {
+      font-size: 36px;
+    }
+  }
+}
+
+@media (min-width: 820px) {
+  #proj-params {
+    #single-floor-params {
+      @include padding-x(60px);
+
+      p {
+        @include margin-y(20px);
+        font-size: 42px;
+      }
+    }
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+  #proj-params {
+    #single-floor-params {
+      @include padding-x(120px);
+
+      p {
+        @include margin-y(30px);
+        font-size: 40px;
+      }
+    }
+
+    .floor-mark {
+      font-size: 42px;
+    }
+  }
+}
+
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  #proj-params {
+    #single-floor-params {
+      @include padding-x(220px);
+
+      p {
+        @include margin-y(36px);
+      }
+    }
+  }
+}
+
+@media (min-width: 1360px) {
+  #proj-params {
+    #single-floor-params {
+      @include padding-x(260px);
+    }
+
+    .floor-mark {
+      font-size: 42px;
+    }
+  }
+}

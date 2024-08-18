@@ -1,24 +1,32 @@
 /* Local imports */
-@import "_utils";
+@import "utils";
 
-/* Import components */
-@import "components/navbar";
-@import "components/dropdown";
-@import "components/footer.scss";
-@import "components/sec_1";
-@import "components/sec_2";
-@import "components/sec_3";
-@import "components/sec_4";
-@import "components/projects-list";
-@import "components/contact-form";
-@import "components/sponsors-line";
+/* Home page components */
+@import "components/home-page/sec_1";
+@import "components/home-page/sec_2";
+@import "components/home-page/sec_3";
+@import "components/home-page/sec_4";
+@import "components/home-page/projects-list";
+@import "components/home-page/sponsors-line";
+
+/* Contact page components */
+@import "components/contact-page/contact-form";
+
+/* Generic project page components */
+@import "components/project-page/title-sec";
+@import "components/project-page/proj-imgs";
+@import "components/project-page/proj-desc";
+@import "components/project-page/proj-params";
 
 /* Import common components, that may be found
  * in many places of the prject */
 @import "components/common/section-heading";
 @import "components/common/link-btn";
-@import "./components/common/block";
-@import "./components/common/content-line";
+@import "components/common/block";
+@import "components/common/content-line";
+@import "components/common/navbar";
+@import "components/common/dropdown";
+@import "components/common/footer";
 
 /* Import pages */
 @import "home";
@@ -32,4 +40,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }

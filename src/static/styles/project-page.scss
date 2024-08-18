@@ -19,34 +19,6 @@
     }
   }
 
-  #title-sec {
-    color: black;
-    text-align: center;
-    font-family: "Roboto", "Montserrat";
-    // box-shadow: 0 0 26px #222e;
-    // background-color: #222e;
-  }
-
-  #proj-imgs {
-    #images-container {
-      padding: 20px;
-      display: flex;
-      column-gap: 10px;
-
-      img {
-        width: 200px;
-      }
-    }
-  }
-
-  #proj-desc {
-    p {
-      @include margin-y(16px);
-      padding: 20px;
-      font-family: "Montserrat", "Roboto";
-    }
-  }
-
   #proj-bps {
     padding: 20px;
 
@@ -87,11 +59,6 @@
         bottom: 16px;
       }
     }
-
-    .title-sec {
-      padding: 20px;
-      font-size: 16px;
-    }
   }
 }
 
@@ -113,11 +80,6 @@
         right: 16px;
         bottom: 20px;
       }
-    }
-
-    .title-sec {
-      padding: 20px;
-      font-size: 24px;
     }
   }
 }
@@ -141,11 +103,6 @@
         bottom: 24px;
       }
     }
-
-    .title-sec {
-      padding: 24px;
-      font-size: 28px;
-    }
   }
 }
 
@@ -167,11 +124,6 @@
         right: 24px;
         bottom: 36px;
       }
-    }
-
-    .title-sec {
-      padding: 28px;
-      font-size: 32px;
     }
   }
 }
