@@ -103,8 +103,16 @@
 @media (min-width: 481px) {
   #footer {
     #footer-logos {
+      #main-logo {
+        width: 120px;
+      }
+
       #sponsor-logos {
         column-gap: 36px;
+
+        img {
+          width: 100px;
+        }
       }
     }
 
@@ -128,6 +136,7 @@
 
       #social-media {
         column-gap: 36px;
+
         img {
           width: 32px;
         }
@@ -149,8 +158,18 @@
 @media (min-width: 1025px) {
   #footer {
     #footer-logos {
+      @include padding-x(26px);
+
+      #main-logo {
+        width: 160px;
+      }
+
       #sponsor-logos {
         column-gap: 36px;
+
+        img {
+          width: 120px;
+        }
       }
     }
 

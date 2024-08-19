@@ -1788,8 +1788,14 @@
 }
 /* Tablets */
 @media (min-width: 481px) {
+  #footer #footer-logos #main-logo {
+    width: 120px;
+  }
   #footer #footer-logos #sponsor-logos {
     column-gap: 36px;
+  }
+  #footer #footer-logos #sponsor-logos img {
+    width: 100px;
   }
   #footer #footer-contacts {
     row-gap: 16px;
@@ -1818,8 +1824,18 @@
 /* Small Desktop */
 /* Large desktops */
 @media (min-width: 1025px) {
+  #footer #footer-logos {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+  #footer #footer-logos #main-logo {
+    width: 160px;
+  }
   #footer #footer-logos #sponsor-logos {
     column-gap: 36px;
+  }
+  #footer #footer-logos #sponsor-logos img {
+    width: 120px;
   }
   #footer #footer-contacts {
     row-gap: 26px;
