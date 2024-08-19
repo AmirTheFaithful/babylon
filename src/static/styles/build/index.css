@@ -1675,12 +1675,45 @@
     font-size: 40px;
   }
 }
+.movable-left {
+  opacity: 0;
+  transform: translateX(-400px);
+}
+
+.movable-right {
+  opacity: 0;
+  transform: translateX(400px);
+}
+
+.movable-top {
+  opacity: 0;
+  transform: translateY(400px);
+}
+
+.movable-bottom {
+  opacity: 0;
+  transform: translateY(-400px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .movable-left,
+  .movable-right,
+  .movable-top,
+  .movable-bottom {
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+}
+.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 #footer {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
   box-shadow: 0 0 42px rgba(34, 34, 34, 0.5333333333);
-  border-top: 6px solid #eecc54;
+  border-top: 6px solid;
 }
 #footer #footer-logos {
   width: 100%;
@@ -1740,42 +1773,78 @@
 /* Mobile */
 @media (min-width: 300px) {
   #footer {
-    padding: 16px;
-    border-width: 4px;
+    padding: 12px;
   }
   #footer #footer-logos #main-logo {
-    width: 160px;
+    width: 100px;
   }
   #footer #footer-contacts {
     flex-direction: column;
     row-gap: 12px;
   }
+  #footer #footer-contacts #contacts h1 {
+    font-size: 26px;
+  }
 }
 /* Tablets */
 @media (min-width: 481px) {
+  #footer #footer-logos #sponsor-logos {
+    column-gap: 36px;
+  }
   #footer #footer-contacts {
-    row-gap: 30px;
+    row-gap: 16px;
   }
   #footer #footer-contacts #contacts {
-    row-gap: 32px;
+    row-gap: 12px;
+  }
+  #footer #footer-contacts #contacts h1 {
+    font-size: 32px;
   }
   #footer #footer-contacts #contacts .contact a,
   #footer #footer-contacts #contacts .contact address {
-    font-size: 26px;
+    font-size: 16px;
   }
   #footer #footer-contacts #social-media {
-    column-gap: 32px;
+    column-gap: 36px;
   }
   #footer #footer-contacts #social-media img {
-    width: 40px;
+    width: 32px;
   }
   #footer #copyright {
-    margin-top: 64px;
+    margin-top: 32px;
     font-size: 16px;
   }
 }
 /* Small Desktop */
 /* Large desktops */
+@media (min-width: 1025px) {
+  #footer #footer-logos #sponsor-logos {
+    column-gap: 36px;
+  }
+  #footer #footer-contacts {
+    row-gap: 26px;
+  }
+  #footer #footer-contacts #contacts {
+    row-gap: 26px;
+  }
+  #footer #footer-contacts #contacts h1 {
+    font-size: 42px;
+  }
+  #footer #footer-contacts #contacts .contact a,
+  #footer #footer-contacts #contacts .contact address {
+    font-size: 24px;
+  }
+  #footer #footer-contacts #social-media {
+    column-gap: 40px;
+  }
+  #footer #footer-contacts #social-media img {
+    width: 36px;
+  }
+  #footer #copyright {
+    margin-top: 32px;
+    font-size: 20px;
+  }
+}
 /* TVs and extra large screens */
 /* Import pages */
 /* Import components of the home page */

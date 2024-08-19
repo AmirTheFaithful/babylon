@@ -1,9 +1,12 @@
+@import "../../utils";
+
 #footer {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
   box-shadow: 0 0 42px #2228;
-  border-top: 6px solid #eecc54;
+  border-top: 6px solid;
+  // border-image: linear-gradient(to-right-top, #eecc54, #ffce1c);
 
   #footer-logos {
     width: 100%;
@@ -75,18 +78,23 @@
 /* Mobile */
 @media (min-width: 300px) {
   #footer {
-    padding: 16px;
-    border-width: 4px;
+    padding: 12px;
 
     #footer-logos {
       #main-logo {
-        width: 160px;
+        width: 100px;
       }
     }
 
     #footer-contacts {
       flex-direction: column;
       row-gap: 12px;
+
+      #contacts {
+        h1 {
+          font-size: 26px;
+        }
+      }
     }
   }
 }
@@ -94,30 +102,40 @@
 /* Tablets */
 @media (min-width: 481px) {
   #footer {
+    #footer-logos {
+      #sponsor-logos {
+        column-gap: 36px;
+      }
+    }
+
     #footer-contacts {
-      row-gap: 30px;
+      row-gap: 16px;
 
       #contacts {
-        row-gap: 32px;
+        row-gap: 12px;
+
+        h1 {
+          font-size: 32px;
+        }
 
         .contact {
           a,
           address {
-            font-size: 26px;
+            font-size: 16px;
           }
         }
       }
 
       #social-media {
-        column-gap: 32px;
+        column-gap: 36px;
         img {
-          width: 40px;
+          width: 32px;
         }
       }
     }
 
     #copyright {
-      margin-top: 64px;
+      margin-top: 32px;
       font-size: 16px;
     }
   }
@@ -129,6 +147,44 @@
 
 /* Large desktops */
 @media (min-width: 1025px) {
+  #footer {
+    #footer-logos {
+      #sponsor-logos {
+        column-gap: 36px;
+      }
+    }
+
+    #footer-contacts {
+      row-gap: 26px;
+
+      #contacts {
+        row-gap: 26px;
+
+        h1 {
+          font-size: 42px;
+        }
+
+        .contact {
+          a,
+          address {
+            font-size: 24px;
+          }
+        }
+      }
+
+      #social-media {
+        column-gap: 40px;
+        img {
+          width: 36px;
+        }
+      }
+    }
+
+    #copyright {
+      margin-top: 32px;
+      font-size: 20px;
+    }
+  }
 }
 
 /* TVs and extra large screens */
