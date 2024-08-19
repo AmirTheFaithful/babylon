@@ -85,10 +85,10 @@
   #navbar {
     @include padding-x(20px);
     align-items: normal;
-    height: 80px;
+    height: 60px;
 
     #logo {
-      width: 130px;
+      width: 100px;
     }
 
     #nav-links {
@@ -98,7 +98,7 @@
         @include padding-x(12px);
         display: flex;
 
-        font-size: 20px;
+        font-size: 16px;
       }
     }
 
@@ -111,17 +111,15 @@
 /* Large desktops */
 @media (min-width: 1025px) {
   #navbar {
-    @include padding-x(20px);
-    height: 100px;
+    height: 80px;
 
     #logo {
-      width: 160px;
+      width: 120px;
     }
 
     #nav-links {
       a {
-        @include padding-x(16px);
-        font-size: 24px;
+        font-size: 20px;
       }
     }
   }
@@ -130,11 +128,14 @@
 /* TVs and extra large screens */
 @media (min-width: 1201px) {
   #navbar {
-    @include padding-x(60px);
+    #logo {
+      width: 140px;
+    }
+
     #nav-links {
       @include padding-x(24px);
       a {
-        font-size: 26px;
+        font-size: 22px;
       }
     }
   }
