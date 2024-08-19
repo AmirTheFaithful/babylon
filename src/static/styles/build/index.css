@@ -1838,6 +1838,7 @@
     width: 120px;
   }
   #footer #footer-contacts {
+    margin-left: 36px;
     row-gap: 26px;
   }
   #footer #footer-contacts #contacts {
