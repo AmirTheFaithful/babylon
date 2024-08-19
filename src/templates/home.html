@@ -1,22 +1,18 @@
 {% extends "base.html" %} {% block title %}
 <title>Головна - Babylon</title>
-{% endblock %} {% block content %}
-<main id="home-page">
-  {% include "components/_main-image.html" %}
+{% endblock %} {% block content %} {% include "components/_main-image.html" %}
 
-  <!-- "Why CLT house is" card -->
-  {% include "./components/main-page/_sec_1.html" %}
+<!-- "Why CLT house is" card -->
+{% include "./components/main-page/_sec_1.html" %}
 
-  <!-- "Our Projects" section -->
-  {% include "./components/main-page/_projects-list.html" %}
+<!-- "Our Projects" section -->
+{% include "./components/main-page/_projects-list.html" %}
 
-  <!-- "Our services" card -->
-  {% include "./components/main-page/_sec_3.html" %}
+<!-- "Our services" card -->
+{% include "./components/main-page/_sec_3.html" %}
 
-  <!-- A little about the "Babylon" company -->
-  {% include "./components/main-page/_sec_4.html" %}
+<!-- A little about the "Babylon" company -->
+{% include "./components/main-page/_sec_4.html" %}
 
-  <!-- Sponsor companies board -->
-  {% include "components/main-page/_sponsors-line.html" %}
-</main>
-{% endblock %}
+<!-- Sponsor companies board -->
+{% include "components/main-page/_sponsors-line.html" %} {% endblock %}
