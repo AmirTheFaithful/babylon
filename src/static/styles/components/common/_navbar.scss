@@ -39,10 +39,11 @@
       transition: background-color 0.3s ease-in-out;
 
       font-family: "Arsenal SC";
-    }
-    :hover {
-      color: white;
-      background-color: #03142ab0;
+
+      &:hover {
+        color: white;
+        background-color: #03142ab0;
+      }
     }
   }
 }
@@ -84,10 +85,6 @@
 @media (min-width: 481px) {
   #navbar {
     height: 100px;
-
-    #logo {
-      width: 160px;
-    }
   }
 }
 
@@ -140,7 +137,7 @@
 @media (min-width: 1201px) {
   #navbar {
     #logo {
-      width: 140px;
+      width: 125px;
     }
 
     #nav-links {

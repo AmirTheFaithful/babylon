@@ -1540,7 +1540,7 @@
   transition: background-color 0.3s ease-in-out;
   font-family: "Arsenal SC";
 }
-#navbar #nav-links :hover {
+#navbar #nav-links a:hover {
   color: white;
   background-color: rgba(3, 20, 42, 0.6901960784);
 }
@@ -1576,9 +1576,6 @@
 @media (min-width: 481px) {
   #navbar {
     height: 100px;
-  }
-  #navbar #logo {
-    width: 160px;
   }
 }
 /* Small Desktop */
@@ -1620,7 +1617,7 @@
 /* TVs and extra large screens */
 @media (min-width: 1201px) {
   #navbar #logo {
-    width: 140px;
+    width: 125px;
   }
   #navbar #nav-links {
     padding-left: 24px;
