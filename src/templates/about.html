@@ -1,9 +1,11 @@
 {% extends "base.html" %} {% block title %}<title>Про Нас - Babylon</title>{%
 endblock %} {% block content %}
-<main id="about-page">
-  <section class="head-image">
-    <img src="../static/assets/about-main-image.jpg" />
-    <h1>Про нас</h1>
-  </section>
-</main>
+<section
+  class="big-image"
+  style="background-image: url('../static/assets/about-main-image.jpg')"
+>
+  <div class="darkener">
+    <h1 class="big-image-text">Про Нас</h1>
+  </div>
+</section>
 {% endblock %}
