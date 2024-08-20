@@ -15,7 +15,8 @@
 
     background-image: linear-gradient(to top, black, transparent);
 
-    .big-image-text {
+    .big-image-text,
+    .big-image-text-set {
       position: absolute;
       bottom: 16px;
 
@@ -23,5 +24,149 @@
       color: white;
       text-align: center;
     }
+
+    .big-image-text-set {
+      position: absolute;
+
+      display: flex;
+      flex-direction: column;
+
+      width: 100%;
+      color: white;
+    }
+
+    .link-btn-container {
+      position: absolute;
+
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  .big-image-text-set {
+    @include padding-x(16px);
+
+    row-gap: 20px;
+
+    p {
+      font-size: 22px;
+    }
+
+    strong {
+      font-size: 26px;
+    }
+  }
+
+  .link-btn-container {
+    bottom: 46px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+  .big-image-text-set {
+    @include padding-x(24px);
+    top: 64px;
+
+    row-gap: 20px;
+
+    p {
+      font-size: 26px;
+    }
+
+    strong {
+      font-size: 30px;
+    }
+  }
+
+  .link-btn-container {
+    position: absolute;
+    bottom: 60px;
+
+    width: 100%;
+
+    text-align: center;
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+  .big-image-text-set {
+    @include padding-x(46px);
+    top: 86px;
+
+    row-gap: 20px;
+
+    p {
+      font-size: 26px;
+    }
+
+    strong {
+      font-size: 30px;
+    }
+  }
+
+  .link-btn-container {
+    position: absolute;
+    bottom: 120px;
+
+    width: 100%;
+
+    text-align: center;
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+  .big-image-text-set {
+    @include padding-x(42px);
+    @include padding-y(36px);
+
+    p {
+      font-size: 28px;
+    }
+
+    strong {
+      font-size: 32px;
+    }
+  }
+
+  .link-btn-container {
+    position: absolute;
+    bottom: 100px;
+
+    width: 100%;
+
+    text-align: center;
+  }
+}
+
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  .big-image-text-set {
+    @include padding-x(64px);
+    @include padding-y(32px);
+
+    row-gap: 30px;
+
+    p {
+      font-size: 32px;
+    }
+
+    strong {
+      font-size: 36px;
+    }
+  }
+
+  .link-btn-container {
+    position: absolute;
+    bottom: 36px;
+
+    width: 100%;
+
+    text-align: center;
   }
 }

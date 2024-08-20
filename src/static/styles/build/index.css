@@ -300,91 +300,6 @@
     font-size: 24px;
   }
 }
-#sec_4 {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  background-size: cover;
-  background-image: url("../../assets/construction-site.jpg");
-  background-repeat: no-repeat;
-}
-#sec_4 .mask {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-family: "Roboto Condensed";
-  background-color: rgba(20, 20, 60, 0.4);
-}
-
-/* Mobile */
-@media (min-width: 300px) {
-  #sec_4 {
-    height: 440px;
-  }
-  #sec_4 .mask {
-    padding: 6px;
-    row-gap: 20px;
-  }
-  #sec_4 h1 {
-    color: #eecc54;
-    font-size: 30px;
-    text-align: center;
-  }
-  #sec_4 p {
-    color: white;
-    font-size: 16px;
-  }
-  #sec_4 strong {
-    font-size: 18px;
-  }
-}
-/* Tablets */
-@media (min-width: 481px) {
-  #sec_4 {
-    height: 670px;
-  }
-  #sec_4 .mask {
-    row-gap: 40px;
-  }
-  #sec_4 h1 {
-    color: #eecc54;
-    font-size: 40px;
-    text-align: center;
-  }
-  #sec_4 p {
-    color: white;
-    font-size: 22px;
-  }
-  #sec_4 strong {
-    font-size: 26px;
-  }
-}
-/* Large desktops */
-@media (min-width: 1025px) {
-  #sec_4 {
-    height: 840px;
-  }
-  #sec_4 .mask {
-    row-gap: 40px;
-  }
-  #sec_4 .mask h1 {
-    color: #eecc54;
-    font-size: 64px;
-    text-align: center;
-  }
-  #sec_4 .mask p {
-    color: white;
-    font-size: 36px;
-  }
-  #sec_4 .mask strong {
-    font-size: 40px;
-  }
-}
 #projects-list #cataloque-grid {
   padding: 16px;
 }
@@ -1883,14 +1798,129 @@
   bottom: 0;
   background-image: linear-gradient(to top, black, transparent);
 }
-.big-image .darkener .big-image-text {
+.big-image .darkener .big-image-text,
+.big-image .darkener .big-image-text-set {
   position: absolute;
   bottom: 16px;
   width: 100%;
   color: white;
   text-align: center;
 }
+.big-image .darkener .big-image-text-set {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+}
+.big-image .darkener .link-btn-container {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
 
+/* Mobile */
+@media (min-width: 300px) {
+  .big-image-text-set {
+    padding-left: 16px;
+    padding-right: 16px;
+    row-gap: 20px;
+  }
+  .big-image-text-set p {
+    font-size: 22px;
+  }
+  .big-image-text-set strong {
+    font-size: 26px;
+  }
+  .link-btn-container {
+    bottom: 46px;
+  }
+}
+/* Tablets */
+@media (min-width: 481px) {
+  .big-image-text-set {
+    padding-left: 24px;
+    padding-right: 24px;
+    top: 64px;
+    row-gap: 20px;
+  }
+  .big-image-text-set p {
+    font-size: 26px;
+  }
+  .big-image-text-set strong {
+    font-size: 30px;
+  }
+  .link-btn-container {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* Small Desktop */
+@media (min-width: 769px) {
+  .big-image-text-set {
+    padding-left: 46px;
+    padding-right: 46px;
+    top: 86px;
+    row-gap: 20px;
+  }
+  .big-image-text-set p {
+    font-size: 26px;
+  }
+  .big-image-text-set strong {
+    font-size: 30px;
+  }
+  .link-btn-container {
+    position: absolute;
+    bottom: 120px;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* Large desktops */
+@media (min-width: 1025px) {
+  .big-image-text-set {
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  .big-image-text-set p {
+    font-size: 28px;
+  }
+  .big-image-text-set strong {
+    font-size: 32px;
+  }
+  .link-btn-container {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  .big-image-text-set {
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    row-gap: 30px;
+  }
+  .big-image-text-set p {
+    font-size: 32px;
+  }
+  .big-image-text-set strong {
+    font-size: 36px;
+  }
+  .link-btn-container {
+    position: absolute;
+    bottom: 36px;
+    width: 100%;
+    text-align: center;
+  }
+}
 /* Import pages */
 /* Import components of the home page */
 .movable-left {
