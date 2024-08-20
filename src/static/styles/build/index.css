@@ -1810,6 +1810,23 @@
   width: 100%;
   text-align: center;
 }
+.big-image .project-heading {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.big-image .project-heading h1 {
+  color: white;
+  font-weight: 800;
+  font-family: "Roboto Condensed", "Arsenal SC";
+}
+.big-image .project-heading h2 {
+  color: #56ef56;
+  font-weight: 600;
+  font-family: "Oswald", "Arsenal SC";
+}
 
 /* Mobile */
 @media (min-width: 300px) {
@@ -1827,6 +1844,17 @@
   .link-btn-container {
     bottom: 46px;
   }
+  .project-heading {
+    padding-left: 20px;
+    padding-right: 20px;
+    bottom: 56px;
+  }
+  .project-heading h1 {
+    font-size: 36px;
+  }
+  .project-heading h2 {
+    font-size: 26px;
+  }
 }
 /* Tablets */
 @media (min-width: 481px) {
@@ -1841,6 +1869,27 @@
     bottom: 60px;
     width: 100%;
     text-align: center;
+  }
+  .project-heading {
+    bottom: 72px;
+  }
+  .project-heading h1 {
+    font-size: 42px;
+  }
+  .project-heading h2 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 560px) {
+  .project-heading {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  .project-heading h1 {
+    font-size: 52px;
+  }
+  .project-heading h2 {
+    font-size: 40px;
   }
 }
 /* Small Desktop */
@@ -1863,6 +1912,16 @@
     width: 100%;
     text-align: center;
   }
+  .project-heading {
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+  .project-heading h1 {
+    font-size: 52px;
+  }
+  .project-heading h2 {
+    font-size: 40px;
+  }
 }
 /* Large desktops */
 @media (min-width: 1025px) {
@@ -1883,6 +1942,16 @@
     bottom: 100px;
     width: 100%;
     text-align: center;
+  }
+  .project-heading {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .project-heading h1 {
+    font-size: 62px;
+  }
+  .project-heading h2 {
+    font-size: 50px;
   }
 }
 /* TVs and extra large screens */
@@ -1905,6 +1974,12 @@
     bottom: 36px;
     width: 100%;
     text-align: center;
+  }
+  .project-heading h1 {
+    font-size: 72px;
+  }
+  .project-heading h2 {
+    font-size: 62px;
   }
 }
 /* Import pages */

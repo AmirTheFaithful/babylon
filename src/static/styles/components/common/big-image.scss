@@ -42,6 +42,31 @@
       text-align: center;
     }
   }
+
+  .project-heading {
+    position: absolute;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      color: white;
+      font: {
+        weight: 800;
+        family: "Roboto Condensed", "Arsenal SC";
+      }
+    }
+
+    h2 {
+      color: #56ef56;
+      font: {
+        weight: 600;
+        family: "Oswald", "Arsenal SC";
+      }
+    }
+  }
 }
 
 /* Mobile */
@@ -63,6 +88,20 @@
   .link-btn-container {
     bottom: 46px;
   }
+
+  .project-heading {
+    @include padding-x(20px);
+
+    bottom: 56px;
+
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 26px;
+    }
+  }
 }
 
 /* Tablets */
@@ -81,6 +120,32 @@
     width: 100%;
 
     text-align: center;
+  }
+
+  .project-heading {
+    bottom: 72px;
+
+    h1 {
+      font-size: 42px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (min-width: 560px) {
+  .project-heading {
+    @include padding-x(36px);
+
+    h1 {
+      font-size: 52px;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
   }
 }
 
@@ -109,6 +174,18 @@
 
     text-align: center;
   }
+
+  .project-heading {
+    @include padding-x(42px);
+
+    h1 {
+      font-size: 52px;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+  }
 }
 
 /* Large desktops */
@@ -133,6 +210,18 @@
     width: 100%;
 
     text-align: center;
+  }
+
+  .project-heading {
+    @include padding-x(32px);
+
+    h1 {
+      font-size: 62px;
+    }
+
+    h2 {
+      font-size: 50px;
+    }
   }
 }
 
@@ -160,5 +249,15 @@
     width: 100%;
 
     text-align: center;
+  }
+
+  .project-heading {
+    h1 {
+      font-size: 72px;
+    }
+
+    h2 {
+      font-size: 62px;
+    }
   }
 }
