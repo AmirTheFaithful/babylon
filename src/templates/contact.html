@@ -1,12 +1,15 @@
 {% extends "base.html" %} {% block title %}
 <title>Звʼяжіться з нами - Babylon</title>
 {% endblock %} {% block content %}
-<main id="contact-page">
-  <section class="head-image">
-    <img src="../static/assets/contact-main-image.jpg" />
-    <h1>Звʼяжіться з нами за конусльтацією та угодою щодо будівництва</h1>
-  </section>
+<section
+  class="big-image"
+  style="
+    background-image: url('../static/assets/contact-page/contact-main-image.jpg');
+  "
+>
+  <div class="darkener">
+    <h1 class="big-image-text">ЗВʼЯЗОК З НАМИ</h1>
+  </div>
+</section>
 
-  {% include "./components/main-page/_contact-form.html" %}
-</main>
-{% endblock %}
+{% include "./components/main-page/_contact-form.html" %} {% endblock %}
