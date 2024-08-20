@@ -1073,18 +1073,20 @@
 .link-btn {
   margin-left: auto;
   margin-right: auto;
-  color: black;
+  color: gold;
   border: none;
+  box-shadow: 0 0 16px rgba(221, 221, 255, 0.8);
   border-radius: 4px;
+  backdrop-filter: blur(24px);
   text-decoration: none;
-  background-color: #eecc54;
+  background-color: rgba(34, 34, 34, 0.8);
 }
 
 /* Mobile */
 @media (min-width: 300px) {
   .link-btn {
     width: 160px;
-    padding: 6px;
+    padding: 16px;
     font-size: 24px;
   }
 }
@@ -1104,22 +1106,9 @@
     transition: background-color 0.2s ease-in, color 0.2s ease-in;
   }
   .link-btn:hover {
-    color: #ddf;
-    background-color: rgba(204, 170, 39, 0.862745098);
-  }
-}
-/* Large desktops */
-@media (min-width: 1025px) {
-  .link-btn {
-    width: 300px;
-    font-size: 46px;
-  }
-}
-/* TVs and extra large screens */
-@media (min-width: 1201px) {
-  .link-btn {
-    width: 360px;
-    font-size: 56px;
+    color: black;
+    box-shadow: 0 0 16px rgba(34, 34, 34, 0.8);
+    background-color: gold;
   }
 }
 .movable-left {
@@ -1839,16 +1828,10 @@
 /* Tablets */
 @media (min-width: 481px) {
   .big-image-text-set {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 26px;
+    padding-right: 26px;
     top: 64px;
     row-gap: 20px;
-  }
-  .big-image-text-set p {
-    font-size: 26px;
-  }
-  .big-image-text-set strong {
-    font-size: 30px;
   }
   .link-btn-container {
     position: absolute;
@@ -1873,7 +1856,7 @@
   }
   .link-btn-container {
     position: absolute;
-    bottom: 120px;
+    bottom: 80px;
     width: 100%;
     text-align: center;
   }

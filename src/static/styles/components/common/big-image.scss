@@ -68,18 +68,10 @@
 /* Tablets */
 @media (min-width: 481px) {
   .big-image-text-set {
-    @include padding-x(24px);
+    @include padding-x(26px);
     top: 64px;
 
     row-gap: 20px;
-
-    p {
-      font-size: 26px;
-    }
-
-    strong {
-      font-size: 30px;
-    }
   }
 
   .link-btn-container {
@@ -111,7 +103,7 @@
 
   .link-btn-container {
     position: absolute;
-    bottom: 120px;
+    bottom: 80px;
 
     width: 100%;
 
