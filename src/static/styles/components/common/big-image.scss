@@ -147,7 +147,7 @@
 /* TVs and extra large screens */
 @media (min-width: 1201px) {
   .big-image-text-set {
-    @include padding-x(64px);
+    @include padding-x(102px);
     @include padding-y(32px);
 
     row-gap: 30px;

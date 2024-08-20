@@ -1902,8 +1902,8 @@
 /* TVs and extra large screens */
 @media (min-width: 1201px) {
   .big-image-text-set {
-    padding-left: 64px;
-    padding-right: 64px;
+    padding-left: 102px;
+    padding-right: 102px;
     padding-top: 32px;
     padding-bottom: 32px;
     row-gap: 30px;
