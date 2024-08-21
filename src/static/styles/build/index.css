@@ -1832,6 +1832,9 @@
 
 /* Mobile */
 @media (min-width: 300px) {
+  .big-image {
+    height: 35%;
+  }
   .big-image-text {
     padding-left: 20px;
     padding-right: 20px;
@@ -1867,6 +1870,9 @@
 }
 /* Tablets */
 @media (min-width: 481px) {
+  .big-image {
+    height: 45%;
+  }
   .big-image-text {
     padding-left: 36px;
     padding-right: 36px;
@@ -1910,6 +1916,9 @@
 }
 /* Small Desktop */
 @media (min-width: 769px) {
+  .big-image {
+    height: 55%;
+  }
   .big-image-text {
     padding-left: 42px;
     padding-right: 42px;
@@ -1948,6 +1957,9 @@
 }
 /* Large desktops */
 @media (min-width: 1025px) {
+  .big-image {
+    height: 80%;
+  }
   .big-image-text {
     padding-left: 72px;
     padding-right: 72px;
@@ -1986,6 +1998,9 @@
 }
 /* TVs and extra large screens */
 @media (min-width: 1201px) {
+  .big-image {
+    height: 100%;
+  }
   .big-image-text {
     padding-left: 46px;
     padding-right: 46px;

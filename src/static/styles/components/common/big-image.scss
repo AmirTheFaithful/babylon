@@ -78,6 +78,10 @@
 
 /* Mobile */
 @media (min-width: 300px) {
+  .big-image {
+    height: 35%;
+  }
+
   .big-image-text {
     @include padding-x(20px);
     bottom: 32px;
@@ -120,6 +124,10 @@
 
 /* Tablets */
 @media (min-width: 481px) {
+  .big-image {
+    height: 45%;
+  }
+
   .big-image-text {
     @include padding-x(36px);
     bottom: 46px;
@@ -172,6 +180,10 @@
 
 /* Small Desktop */
 @media (min-width: 769px) {
+  .big-image {
+    height: 55%;
+  }
+
   .big-image-text {
     @include padding-x(42px);
     bottom: 62px;
@@ -218,6 +230,10 @@
 
 /* Large desktops */
 @media (min-width: 1025px) {
+  .big-image {
+    height: 80%;
+  }
+
   .big-image-text {
     @include padding-x(72px);
     bottom: 36px;
@@ -262,6 +278,10 @@
 
 /* TVs and extra large screens */
 @media (min-width: 1201px) {
+  .big-image {
+    height: 100%;
+  }
+
   .big-image-text {
     @include padding-x(46px);
     bottom: 52px;
