@@ -18,15 +18,22 @@
     .big-image-text,
     .big-image-text-set {
       position: absolute;
-      bottom: 16px;
 
       width: 100%;
       color: white;
       text-align: center;
     }
 
+    .big-image-text {
+      font: {
+        weight: 700;
+        family: "Arsenal SC", "Montserrat", "Oswald";
+      }
+    }
+
     .big-image-text-set {
       position: absolute;
+      bottom: 32px;
 
       display: flex;
       flex-direction: column;
@@ -71,6 +78,13 @@
 
 /* Mobile */
 @media (min-width: 300px) {
+  .big-image-text {
+    @include padding-x(20px);
+    bottom: 32px;
+    font-size: 32px;
+    line-height: 50px;
+  }
+
   .big-image-text-set {
     @include padding-x(16px);
 
@@ -106,6 +120,13 @@
 
 /* Tablets */
 @media (min-width: 481px) {
+  .big-image-text {
+    @include padding-x(36px);
+    bottom: 46px;
+    font-size: 42px;
+    line-height: 60px;
+  }
+
   .big-image-text-set {
     @include padding-x(26px);
     top: 64px;
@@ -151,6 +172,13 @@
 
 /* Small Desktop */
 @media (min-width: 769px) {
+  .big-image-text {
+    @include padding-x(42px);
+    bottom: 62px;
+    font-size: 50px;
+    line-height: 64px;
+  }
+
   .big-image-text-set {
     @include padding-x(46px);
     top: 86px;
@@ -190,6 +218,13 @@
 
 /* Large desktops */
 @media (min-width: 1025px) {
+  .big-image-text {
+    @include padding-x(72px);
+    bottom: 36px;
+    font-size: 56px;
+    line-height: 76px;
+  }
+
   .big-image-text-set {
     @include padding-x(42px);
     @include padding-y(36px);
@@ -227,6 +262,13 @@
 
 /* TVs and extra large screens */
 @media (min-width: 1201px) {
+  .big-image-text {
+    @include padding-x(46px);
+    bottom: 52px;
+    font-size: 64px;
+    line-height: 86px;
+  }
+
   .big-image-text-set {
     @include padding-x(102px);
     @include padding-y(32px);
