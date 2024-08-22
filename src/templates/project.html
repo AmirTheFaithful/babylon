@@ -2,12 +2,14 @@
   Проєкт {{ project.name }} - Babylon</title
 >{% endblock %} {% block content %}
 <!-- The first image of the project as the head image -->
-<header class="big-image" style="background-image: url('{{ project.images["1"] }}')">
-  <div class="darkener">
-    <div class="project-heading">
-      <h1>{{ project.name }}</h1>
-      <h2>{{ project.square }}</h2>
-    </div>
+<header class="big-image-container">
+  <div class="big-image" style="background-image: url('{{ project.images["1"] }}')">
+    <div class="darkener"></div>
+  </div>
+  
+  <div class="project-heading">
+    <h1>{{ project.name }}</h1>
+    <h2>{{ project.square }}</h2>
   </div>
 </header>
 

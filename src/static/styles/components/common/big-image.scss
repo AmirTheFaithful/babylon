@@ -1,90 +1,109 @@
-.big-image {
+.big-image-container {
   position: relative;
 
-  height: 100%;
+  background-color: black;
+}
+
+.big-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  overflow-y: hidden;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
 
-  .darkener {
-    position: absolute;
-    top: 15%;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.darkener {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
-    background-image: linear-gradient(to top, black, transparent);
+  height: 100%;
+  background-image: linear-gradient(to top, black 15%, transparent);
+}
 
-    .big-image-text,
-    .big-image-text-set {
-      position: absolute;
+.big-image-text,
+.big-image-text-set {
+  position: absolute;
 
-      width: 100%;
-      color: white;
-      text-align: center;
-    }
+  width: 100%;
+  color: white;
+  text-align: center;
+}
 
-    .big-image-text {
-      font: {
-        weight: 700;
-        family: "Arsenal SC", "Montserrat", "Oswald";
-      }
-    }
+.big-image-text {
+  font: {
+    weight: 700;
+    family: "Arsenal SC", "Montserrat", "Oswald";
+  }
+}
 
-    .big-image-text-set {
-      position: absolute;
-      bottom: 32px;
+.big-image-text-set {
+  position: absolute;
+  bottom: 32px;
 
-      display: flex;
-      flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-      width: 100%;
-      color: white;
-    }
+  width: 100%;
+  color: white;
+}
 
-    .link-btn-container {
-      position: absolute;
+.link-btn-container {
+  position: absolute;
 
-      width: 100%;
-      text-align: center;
+  width: 100%;
+  text-align: center;
+}
+
+.project-heading {
+  position: absolute;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    color: white;
+    font: {
+      weight: 800;
+      family: "Roboto Condensed", "Arsenal SC";
     }
   }
 
-  .project-heading {
-    position: absolute;
-
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    h1 {
-      color: white;
-      font: {
-        weight: 800;
-        family: "Roboto Condensed", "Arsenal SC";
-      }
-    }
-
-    h2 {
-      color: #56ef56;
-      font: {
-        weight: 600;
-        family: "Oswald", "Arsenal SC";
-      }
+  h2 {
+    color: #56ef56;
+    font: {
+      weight: 600;
+      family: "Oswald", "Arsenal SC";
     }
   }
 }
 
 /* Mobile */
 @media (min-width: 300px) {
+  .big-image-container {
+    height: 50%;
+  }
+
   .big-image {
-    height: 35%;
+    height: 70%;
+  }
+
+  .darkener {
+    background-image: linear-gradient(to top, black, transparent);
   }
 
   .big-image-text {
     @include padding-x(20px);
-    bottom: 32px;
+    bottom: 46px;
     font-size: 32px;
     line-height: 50px;
   }
@@ -124,15 +143,12 @@
 
 /* Tablets */
 @media (min-width: 481px) {
-  .big-image {
-    height: 45%;
+  .big-image-container {
+    height: 50%;
   }
 
-  .big-image-text {
-    @include padding-x(36px);
-    bottom: 46px;
-    font-size: 42px;
-    line-height: 60px;
+  .big-image {
+    height: 80%;
   }
 
   .big-image-text-set {
@@ -152,7 +168,7 @@
   }
 
   .project-heading {
-    bottom: 72px;
+    bottom: 50px;
 
     h1 {
       font-size: 42px;
@@ -180,8 +196,12 @@
 
 /* Small Desktop */
 @media (min-width: 769px) {
+  .big-image-container {
+    height: 100%;
+  }
+
   .big-image {
-    height: 55%;
+    height: 60%;
   }
 
   .big-image-text {
@@ -217,6 +237,7 @@
 
   .project-heading {
     @include padding-x(42px);
+    bottom: 120px;
 
     h1 {
       font-size: 52px;
@@ -231,7 +252,7 @@
 /* Large desktops */
 @media (min-width: 1025px) {
   .big-image {
-    height: 80%;
+    height: 90%;
   }
 
   .big-image-text {
@@ -265,6 +286,7 @@
 
   .project-heading {
     @include padding-x(32px);
+    bottom: 46px;
 
     h1 {
       font-size: 62px;
@@ -314,6 +336,8 @@
   }
 
   .project-heading {
+    bottom: 64px;
+
     h1 {
       font-size: 72px;
     }
