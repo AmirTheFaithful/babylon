@@ -2,6 +2,20 @@ from flask import Blueprint, render_template
 
 main_bp: Blueprint = Blueprint("pages", __name__)
 
+# Helper function that just returns 
+# ready torender projects as dicts
+def get_projects() -> dict:
+  from json import loads
+
+  # Fetch objects from the data file
+  with open("src/blueprints/projects.json") as file:
+    file_contents = file.read()
+
+  # Transform JSON objects to Python dicts
+  projects = loads(file_contents)
+
+  return projects
+
 @main_bp.route("/")
 def home() -> str:
   return render_template("home.html")
@@ -24,18 +38,11 @@ def stone_houses() -> str:
 
 @main_bp.route("/projects")
 def projects() -> str:
-  return render_template("projects.html")
+  return render_template("projects.html", projects=get_projects())
 
 @main_bp.route("/projects/<project_id>")
 def project(project_id: str) -> str:
-  from json import loads
-
-  # Fetch objects from the data file
-  with open("src/blueprints/projects.json") as file:
-    file_contents = file.read()
-
-  # Transform JSON objects to Python dicts
-  projects = loads(file_contents)
+  projects: dict = get_projects()
 
   # Find requested project to render
   index = int(project_id) - 1
