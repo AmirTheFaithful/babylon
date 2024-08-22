@@ -11,6 +11,8 @@
   right: 0;
   bottom: 0;
 
+  opacity: 1;
+  transition: opacity 0.3s linear;
   overflow-y: hidden;
   background-size: cover;
   background-repeat: no-repeat;

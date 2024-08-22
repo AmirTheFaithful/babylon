@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block title %}<title>Наші Проєкти - Babylon</title
+>{% endblock %} {% block content %}
+<header class="big-image-container">
+  <div
+    class="big-image"
+    style="background-image: url('../../static/assets/main-image.jpg')"
+  >
+    <div class="darkener"></div>
+  </div>
+  <h1 class="big-image-text">
+    ЗБУДУЄМО БУДИНОК ШВИДКО, НЕ ВИТРАЧАЮЧИ ВАШІ ГРОШІ НА РЕМОНТ
+  </h1>
+
+  <!-- <script src="../static/scripts/image-change.js"></script> -->
+</header>
+
+<section>
+  <h1 class="section-heading">СПИСОК НАШИХ ПРОЄКТІВ ДО ВАШОЇ УВАГИ:</h1>
+
+  <ul class="project-list">
+    {% for project in projects %}
+    <li class="project-card">
+      <img src="{{ project.images['1'] }}" />
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+{% endblock %}

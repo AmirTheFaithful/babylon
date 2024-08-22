@@ -1,0 +1,12 @@
+@import "utils";
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+
+  list-style-type: none;
+
+  .project-card {
+    display: flex;
+  }
+}
