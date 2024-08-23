@@ -1416,7 +1416,7 @@
 
 .scrolled {
   backdrop-filter: blur(6px);
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.6666666667);
 }
 
 .non-scrolled {
@@ -1430,7 +1430,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  z-index: 100;
+  z-index: 20;
   transition: all 0.6s linear;
 }
 #navbar #nav-links {
@@ -1540,12 +1540,13 @@
 .dropdown-enabled {
   z-index: 20;
   position: fixed;
+  top: 72px;
   display: flex;
   flex-direction: column;
   width: 100%;
   min-height: 100%;
   backdrop-filter: blur(6px);
-  background-color: rgba(220, 220, 245, 0.4);
+  background-color: rgba(255, 255, 255, 0.6666666667);
 }
 .dropdown-enabled ul {
   display: flex;
@@ -1558,11 +1559,11 @@
   padding-bottom: 16px;
   width: 100%;
   text-align: center;
-  background-color: rgba(120, 120, 160, 0.4);
 }
 .dropdown-enabled ul a {
-  color: white;
+  color: black;
   text-decoration: none;
+  font-weight: 700;
   font-family: "Arsenal SC";
 }
 
