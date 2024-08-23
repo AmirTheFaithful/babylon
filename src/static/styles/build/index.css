@@ -562,7 +562,42 @@
   }
 }
 /* Contact page components */
+.movable-left {
+  opacity: 0;
+  transform: translateX(-400px);
+}
+
+.movable-right {
+  opacity: 0;
+  transform: translateX(400px);
+}
+
+.movable-top {
+  opacity: 0;
+  transform: translateY(400px);
+}
+
+.movable-bottom {
+  opacity: 0;
+  transform: translateY(-400px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .movable-left,
+  .movable-right,
+  .movable-top,
+  .movable-bottom {
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+}
+.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 #form-container {
+  margin-top: 64px;
+  margin-bottom: 64px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;

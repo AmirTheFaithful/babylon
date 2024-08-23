@@ -1,4 +1,8 @@
+@import "../../utils";
+
 #form-container {
+  @include margin-y(64px);
+
   display: flex;
   flex-direction: column;
   row-gap: 20px;
