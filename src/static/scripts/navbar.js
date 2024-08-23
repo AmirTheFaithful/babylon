@@ -12,12 +12,12 @@ function toggleDropdown() {
   let icon = document.getElementById("hamburger-icon");
 
   if (icon.classList.contains("menuIcon")) {
-    icon.classList.remove("menuIcon")
-    icon.classList.add("closeIcon")
+    icon.classList.remove("menuIcon");
+    icon.classList.add("closeIcon");
     icon.innerHTML = "close";
   } else {
     icon.classList.remove("closeIcon");
-    icon.classList.add("menuIcon")
+    icon.classList.add("menuIcon");
     icon.innerHTML = "menu";
   }
 }
