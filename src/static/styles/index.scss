@@ -56,3 +56,10 @@ html,
 body {
   height: 100%;
 }
+
+main {
+  @include padding-y(140px);
+
+  display: flex;
+  flex-direction: column;
+}

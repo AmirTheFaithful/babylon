@@ -1150,7 +1150,6 @@
 .block {
   width: 100%;
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 .block img {
@@ -1193,7 +1192,12 @@
     padding: 32px;
   }
   .block img {
-    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .block h2 {
+    text-align: center;
   }
   .block p {
     padding: 16px;
@@ -1206,9 +1210,11 @@
     margin-top: 60px;
     margin-bottom: 60px;
     padding: 22px;
-    align-items: stretch;
     flex-direction: row;
     column-gap: 30px;
+  }
+  .block img {
+    height: 50%;
   }
   .block div {
     row-gap: 20px;
@@ -2484,6 +2490,13 @@ body {
 html,
 body {
   height: 100%;
+}
+
+main {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=index.css.map */

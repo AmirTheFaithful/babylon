@@ -3,7 +3,6 @@
 .block {
   width: 100%;
   display: flex;
-  align-items: center;
   flex-direction: column;
 
   img {
@@ -51,7 +50,12 @@
     padding: 32px;
 
     img {
-      width: 80%;
+      @include margin-x(auto);
+      width: 90%;
+    }
+
+    h2 {
+      text-align: center;
     }
 
     p {
@@ -67,9 +71,12 @@
     @include margin-y(60px);
     padding: 22px;
 
-    align-items: stretch;
     flex-direction: row;
     column-gap: 30px;
+
+    img {
+      height: 50%;
+    }
 
     div {
       row-gap: 20px;
