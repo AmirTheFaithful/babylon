@@ -2376,6 +2376,100 @@
     bottom: 154px;
   }
 }
+.movable-left {
+  opacity: 0;
+  transform: translateX(-400px);
+}
+
+.movable-right {
+  opacity: 0;
+  transform: translateX(400px);
+}
+
+.movable-top {
+  opacity: 0;
+  transform: translateY(400px);
+}
+
+.movable-bottom {
+  opacity: 0;
+  transform: translateY(-400px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .movable-left,
+  .movable-right,
+  .movable-top,
+  .movable-bottom {
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+}
+.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.projects-list .project-card {
+  position: relative;
+  display: flex;
+}
+.projects-list .project-card .thumb {
+  filter: brightness(60%);
+  box-shadow: 0 0 24px rgba(34, 34, 34, 0.6666666667), inset 0 0 16px rgba(34, 34, 34, 0.8666666667);
+  border-radius: 24px;
+  object-fit: cover;
+  object-position: center;
+}
+.projects-list .project-card .thumb-text {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+.projects-list .project-card .thumb-text h1 {
+  color: white;
+  font-weight: 800;
+  font-family: "Roboto Condensed", "Arsenal SC";
+}
+.projects-list .project-card .thumb-text h2 {
+  color: #56ef56;
+  font-weight: 600;
+  font-family: "Oswald", "Arsenal SC";
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  .projects-list {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .projects-list .project-card {
+    width: 100%;
+  }
+  .projects-list .project-card .thumb,
+  .projects-list .project-card .thumb-text {
+    width: 100%;
+  }
+  .projects-list .project-card .thumb-text {
+    padding-left: 20px;
+    padding-right: 20px;
+    bottom: 26px;
+  }
+  .projects-list .project-card .thumb-text h1 {
+    font-size: 32px;
+  }
+  .projects-list .project-card .thumb-text h2 {
+    font-size: 28px;
+  }
+}
+/* Tablets */
+/* Small Desktop */
+/* Large desktops */
+/* TVs and extra large screens */
 * {
   margin: 0;
   padding: 0;

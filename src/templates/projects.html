@@ -17,10 +17,17 @@
 <section>
   <h1 class="section-heading">СПИСОК НАШИХ ПРОЄКТІВ ДО ВАШОЇ УВАГИ:</h1>
 
-  <ul class="project-list">
+  <ul class="projects-list">
     {% for project in projects %}
     <li class="project-card">
-      <img src="{{ project.images['1'] }}" />
+      <a href="/projects/{{(projects.index(project) + 1)}}">
+        <img class="thumb" src="{{ project.images['1'] }}" />
+
+        <div class="thumb-text">
+          <h1>{{ project.name }}</h1>
+          <h2>{{ project.square }}</h2>
+        </div>
+      </a>
     </li>
     {% endfor %}
   </ul>
