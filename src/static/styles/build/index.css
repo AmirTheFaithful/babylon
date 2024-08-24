@@ -325,7 +325,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 30px;
+    row-gap: 60px;
   }
   #cataloque-grid .thumbnail,
   #cataloque-grid .thumbnail > img {
@@ -382,7 +382,7 @@
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto auto auto auto;
-    gap: 6px 20px;
+    gap: 32px 20px;
   }
   #cataloque-grid .thumbnail,
   #cataloque-grid .thumbnail > img {
@@ -394,10 +394,10 @@
   }
   #cataloque-grid .thumbnail h1 {
     color: white;
-    bottom: 0;
+    bottom: 12;
     left: 0;
     opacity: 0;
-    font-size: 20px;
+    font-size: 26px;
     transition: opacity 0.35s linear;
   }
   #cataloque-grid .thumbnail:hover img {
@@ -438,6 +438,7 @@
     height: 160px;
   }
   #cataloque-grid .thumbnail h1 {
+    bottom: 24px;
     font-size: 26px;
   }
 }
@@ -471,6 +472,7 @@
     height: 200px;
   }
   #cataloque-grid .thumbnail h1 {
+    bottom: 32px;
     font-size: 36px;
   }
 }
