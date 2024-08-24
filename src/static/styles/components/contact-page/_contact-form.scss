@@ -68,6 +68,10 @@
 
 /* Tablets */
 @media (min-width: 481px) {
+  #form-container {
+    padding: 16px;
+  }
+
   #contact-form {
     padding: 26px;
     row-gap: 46px;
@@ -86,6 +90,18 @@
 
 /* Small Desktop */
 @media (min-width: 769px) {
+  #form-container {
+    padding: 20px;
+
+    h1 {
+      font-size: 22px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+  }
+
   #contact-form {
     // On desktop screens it turns into a grid
     display: grid;
@@ -114,6 +130,16 @@
 
 /* Large desktops */
 @media (min-width: 1025px) {
+  #form-container {
+    h1 {
+      font-size: 26px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+  }
+
   #contact-form {
     column-gap: 60px;
     row-gap: 48px;
