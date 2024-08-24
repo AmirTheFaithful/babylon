@@ -64,3 +64,31 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+/* Mobile */
+@media (min-width: 300px) {
+  .page-section {
+    @include margin-y(80px);
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+  .page-section {
+    @include margin-y(100px);
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+  .page-section {
+    @include margin-y(120px);
+  }
+}
+
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  .page-section {
+    @include margin-y(160px);
+  }
+}

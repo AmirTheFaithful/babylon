@@ -2702,4 +2702,33 @@ main {
   flex-direction: column;
 }
 
+/* Mobile */
+@media (min-width: 300px) {
+  .page-section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+/* Small Desktop */
+@media (min-width: 769px) {
+  .page-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+/* Large desktops */
+@media (min-width: 1025px) {
+  .page-section {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+}
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  .page-section {
+    margin-top: 160px;
+    margin-bottom: 160px;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
