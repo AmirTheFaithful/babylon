@@ -308,11 +308,14 @@
   position: relative;
 }
 #projects-list #cataloque-grid .thumbnail img {
+  box-shadow: 0 0 24px rgba(34, 34, 34, 0.6666666667), inset 0 0 16px rgba(34, 34, 34, 0.8);
+  border-radius: 16px;
   transition: filter 0.35s linear;
 }
 #projects-list #cataloque-grid .thumbnail h1 {
   position: absolute;
-  bottom: 0;
+  width: 100%;
+  text-align: center;
   font-family: "Roboto";
 }
 
@@ -334,6 +337,7 @@
   }
   #cataloque-grid .thumbnail h1 {
     color: white;
+    bottom: 20px;
     opacity: 1;
     font-size: 24px;
   }

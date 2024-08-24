@@ -7,12 +7,16 @@
       position: relative;
 
       img {
+        box-shadow: 0 0 24px #222a, inset 0 0 16px #222c;
+        border-radius: 16px;
         transition: filter 0.35s linear;
       }
 
       h1 {
         position: absolute;
-        bottom: 0;
+
+        width: 100%;
+        text-align: center;
         font-family: "Roboto";
       }
     }
@@ -40,6 +44,7 @@
 
       h1 {
         color: white;
+        bottom: 20px;
         opacity: 1;
         font-size: 24px;
       }
