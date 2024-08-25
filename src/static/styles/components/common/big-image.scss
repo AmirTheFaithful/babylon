@@ -1,7 +1,7 @@
 .big-image-container {
   position: relative;
 
-  background-color: black;
+  background-color: #2262;
 }
 
 .big-image {
@@ -27,7 +27,7 @@
   bottom: 0;
 
   height: 100%;
-  background-image: linear-gradient(to top, black 15%, transparent);
+  background-image: linear-gradient(to top, #2262, transparent);
 }
 
 .big-image-text,
@@ -92,15 +92,15 @@
 /* Mobile */
 @media (min-width: 300px) {
   .big-image-container {
-    height: 50%;
+    height: 100%;
   }
 
   .big-image {
-    height: 70%;
+    height: 100%;
   }
 
   .darkener {
-    background-image: linear-gradient(to top, black, transparent);
+    background-image: linear-gradient(to top, #223c, transparent);
   }
 
   .big-image-text {
@@ -146,11 +146,11 @@
 /* Tablets */
 @media (min-width: 481px) {
   .big-image-container {
-    height: 50%;
+    height: 100%;
   }
 
   .big-image {
-    height: 80%;
+    height: 100%;
   }
 
   .big-image-text-set {
@@ -203,7 +203,7 @@
   }
 
   .big-image {
-    height: 60%;
+    height: 100%;
   }
 
   .big-image-text {
@@ -254,7 +254,7 @@
 /* Large desktops */
 @media (min-width: 1025px) {
   .big-image {
-    height: 90%;
+    height: 100%;
   }
 
   .big-image-text {

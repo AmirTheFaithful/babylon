@@ -1,3 +1,5 @@
+@import "../../utils";
+
 #sec_3 {
   display: flex;
   flex-direction: column;
@@ -18,21 +20,28 @@
   .list-col {
     display: flex;
     flex-direction: column;
+  }
 
-    .service-card {
-      color: white;
-      box-shadow: 0 0 16px #2226;
-      border-radius: 4px;
-      background-image: linear-gradient(to bottom right, #02280cd6, #5e5d23d6);
-      // background-color: #3b3b3bd6;
-    }
+  .service-card {
+    color: white;
+    box-shadow: 0 0 16px #2226;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom right, #02280cd6, #5e5d23d6);
+    // background-color: #3b3b3bd6;
+  }
+
+  .short-list-container {
+    display: flex;
   }
 }
 
 /* Mobile */
 @media (min-width: 300px) {
   #sec_3 {
-    #list-container {
+    #list-container,
+    .short-list-container {
+      @include padding-x(36px);
+
       flex-direction: column;
       row-gap: 20px;
     }
@@ -41,13 +50,8 @@
       row-gap: 40px;
       padding: 12px;
 
-      .service-card {
-        padding: 6px;
-      }
-
       strong {
         font-size: 22px;
-        margin-left: 16px;
       }
 
       ul {
@@ -58,34 +62,46 @@
         }
       }
     }
+
+    .service-card {
+      padding: 32px;
+
+      strong {
+        text-align: center;
+      }
+    }
   }
 }
 
 /* Small Desktop */
 @media (min-width: 769px) {
   #sec_3 {
-    #list-container {
+    #list-container,
+    .short-list-container {
+      @include padding-x(36px);
+
       align-items: stretch;
       flex-direction: row;
+      justify-content: space-between;
 
       .list-col {
         justify-content: stretch;
       }
+    }
+  }
 
-      .service-card {
-        height: 260px;
+  .service-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        strong {
-          font-size: 28px;
-        }
+    strong {
+      font-size: 28px;
+    }
 
-        li {
-          font-size: 24px;
-        }
-      }
+    li {
+      font-size: 24px;
     }
   }
 }

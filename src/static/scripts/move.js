@@ -29,7 +29,9 @@ const observer = new IntersectionObserver((entries) => {
 
     // Let the animation play when it is
     // seen again every time
-    entry.target.classList.remove("animated");
+    if (entry.target.classList.contains("infinite-play")) {
+      entry.target.classList.remove("animated");
+    }
   });
 });
 
