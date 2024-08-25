@@ -1,0 +1,154 @@
+#cookies-box {
+  padding: 20px;
+  box-shadow: 0 0 24px #222a;
+  background-color: #121212;
+
+  .hide {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: all 0.6s linear;
+  }
+
+  #cookies-text {
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    font-family: "Roboto", "Arsenal SC", "Montserrat";
+
+    h1,
+    p,
+    strong {
+      text-align: center;
+    }
+  }
+
+  #cookies-btns {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+
+    button {
+      border: none;
+    }
+
+    .consent-btn {
+      color: white;
+      background-color: #ff9500;
+    }
+
+    .reject-btn {
+      background-color: #eeed;
+    }
+  }
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  #cookies-box {
+    padding: 20px;
+
+    #cookies-text {
+      row-gap: 16px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    strong {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    button {
+      @include margin-y(16px);
+      @include padding-x(20px);
+      @include padding-y(12px);
+
+      font-size: 16px;
+      border-radius: 2px;
+    }
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+  #cookies-box {
+    padding: 20px;
+
+    #cookies-text {
+      row-gap: 30px;
+    }
+
+    h1 {
+      font-size: 26px;
+    }
+
+    strong {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    button {
+      @include margin-y(16px);
+      @include padding-x(20px);
+      @include padding-y(12px);
+
+      font-size: 18px;
+    }
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+  #cookies-box {
+    padding: 30px;
+
+    #cookies-text {
+      row-gap: 25px;
+    }
+
+    h1 {
+      font-size: 26px;
+    }
+
+    strong {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    button {
+      @include margin-y(16px);
+      @include padding-x(20px);
+      @include padding-y(12px);
+
+      font-size: 20px;
+      border-radius: 4px;
+    }
+
+    /* On sensor devices, enable pointer cursor */
+    .consent-btn,
+    .reject-btn {
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+    }
+
+    button:hover {
+      transform: scale(1.06);
+    }
+  }
+}
