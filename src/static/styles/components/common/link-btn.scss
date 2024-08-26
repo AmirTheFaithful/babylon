@@ -1,0 +1,71 @@
+@import "../../utils";
+
+.link-btn {
+  color: white;
+  border: none;
+  box-shadow: 2px 6px 24px #888c;
+  font-family: "Arsenal SC", "Montserrat", "Roboto Condensed";
+  text-decoration: none;
+  background-color: black;
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  .link-btn {
+    @include padding-x(20px);
+    @include padding-y(10px);
+
+    font-size: 24px;
+    border-radius: 4px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+  .link-btn {
+    @include padding-x(26px);
+    @include padding-y(16px);
+
+    font-size: 26px;
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+  .link-btn {
+    @include padding-x(32px);
+    @include padding-y(16px);
+
+    cursor: pointer;
+    font-size: 28px;
+    transition: color 0.2s linear, background-color 0.2s linear;
+    border-radius: 6px;
+
+    &:hover {
+      color: black;
+      background-color: #ff9500;
+    }
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+  .link-btn {
+    @include padding-x(36px);
+    @include padding-y(18px);
+
+    font-size: 30px;
+    border-radius: 7px;
+  }
+}
+
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  .link-btn {
+    @include padding-x(40px);
+    @include padding-y(22px);
+
+    font-size: 32px;
+    border-radius: 8px;
+  }
+}

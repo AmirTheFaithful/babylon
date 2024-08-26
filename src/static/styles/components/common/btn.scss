@@ -1,9 +1,0 @@
-@import "../../utils";
-
-.btn {
-  @include margin-x(auto);
-
-  color: white;
-  border-radius: 6px;
-  background-color: black;
-}

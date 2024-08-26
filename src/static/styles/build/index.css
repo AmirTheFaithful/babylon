@@ -492,6 +492,12 @@
     font-size: 32px;
   }
 }
+#projects-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
 #projects-list #cataloque-grid {
   padding: 16px;
 }
@@ -1323,46 +1329,106 @@
     letter-spacing: 2px;
   }
 }
+.movable-left {
+  opacity: 0;
+  transform: translateX(-400px);
+}
+
+.movable-right {
+  opacity: 0;
+  transform: translateX(400px);
+}
+
+.movable-top {
+  opacity: 0;
+  transform: translateY(400px);
+}
+
+.movable-bottom {
+  opacity: 0;
+  transform: translateY(-400px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .movable-left,
+  .movable-right,
+  .movable-top,
+  .movable-bottom {
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+}
+.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .link-btn {
-  margin-left: auto;
-  margin-right: auto;
   color: white;
   border: none;
-  text-shadow: 0 0 26px rgba(46, 199, 255, 0.5882352941);
-  font-family: "Roboto Condensed", "Arial";
-  box-shadow: 0 0 16px rgba(221, 221, 255, 0.4);
-  border-radius: 4px;
-  backdrop-filter: blur(24px);
+  box-shadow: 2px 6px 24px rgba(136, 136, 136, 0.8);
+  font-family: "Arsenal SC", "Montserrat", "Roboto Condensed";
   text-decoration: none;
-  background-color: rgba(34, 34, 34, 0.8666666667);
+  background-color: black;
 }
 
 /* Mobile */
 @media (min-width: 300px) {
   .link-btn {
-    width: 160px;
-    padding: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 24px;
+    border-radius: 4px;
   }
 }
 /* Tablets */
 @media (min-width: 481px) {
   .link-btn {
-    width: 180px;
-    padding: 10px;
-    font-size: 32px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 26px;
   }
 }
 /* Small Desktop */
 @media (min-width: 769px) {
   .link-btn {
-    width: 260px;
-    font-size: 42px;
-    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    cursor: pointer;
+    font-size: 28px;
+    transition: color 0.2s linear, background-color 0.2s linear;
+    border-radius: 6px;
   }
   .link-btn:hover {
-    color: rgba(255, 255, 255, 0.9333333333);
-    background-color: rgba(34, 34, 34, 0.4);
+    color: black;
+    background-color: #ff9500;
+  }
+}
+/* Large desktops */
+@media (min-width: 1025px) {
+  .link-btn {
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 30px;
+    border-radius: 7px;
+  }
+}
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  .link-btn {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    font-size: 32px;
+    border-radius: 8px;
   }
 }
 .movable-left {
@@ -2354,57 +2420,14 @@
     font-size: 62px;
   }
 }
-.movable-left {
-  opacity: 0;
-  transform: translateX(-400px);
-}
-
-.movable-right {
-  opacity: 0;
-  transform: translateX(400px);
-}
-
-.movable-top {
-  opacity: 0;
-  transform: translateY(400px);
-}
-
-.movable-bottom {
-  opacity: 0;
-  transform: translateY(-400px);
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .movable-left,
-  .movable-right,
-  .movable-top,
-  .movable-bottom {
-    transition: opacity 1.5s ease, transform 1.5s ease;
-  }
-}
-.animated {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.btn {
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  border-radius: 6px;
-  background-color: black;
-}
-
 #cookies-box {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 80;
   padding: 20px;
   box-shadow: 0 0 24px rgba(34, 34, 34, 0.6666666667);
   background-color: #121212;
-}
-#cookies-box .hide {
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(0.8);
-  transition: all 0.6s linear;
 }
 #cookies-box #cookies-text {
   display: flex;
@@ -2433,6 +2456,14 @@
 }
 #cookies-box #cookies-btns .reject-btn {
   background-color: rgba(238, 238, 238, 0.8666666667);
+}
+
+.hide {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+  transition: all 0.6s linear;
 }
 
 /* Mobile */
@@ -2947,6 +2978,7 @@ body {
 
 html,
 body {
+  position: relative;
   height: 100%;
 }
 

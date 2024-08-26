@@ -1,4 +1,9 @@
 #projects-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+
   #cataloque-grid {
     padding: 16px;
 
