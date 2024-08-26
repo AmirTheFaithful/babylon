@@ -1,0 +1,136 @@
+@import "../../utils";
+
+.big-text-container {
+  background-image: linear-gradient(to bottom, transparent, #131313 35%);
+
+  p {
+    font-weight: 600;
+    font-family: "Roboto Condensed", "Arsenal SC";
+
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to bottom, black 25%, white 50%);
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: 400;
+    font-family: "Roboto", "Montserrat";
+
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to top right, #ffb300 50%, #0078cd 50%);
+  }
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  .big-text-container {
+    @include margin-y(100px);
+
+    p {
+      width: 320px;
+      margin-left: 16px;
+
+      font-size: 72px;
+    }
+
+    h1 {
+      @include padding-y(60px);
+
+      width: 100%;
+      font-size: 72px;
+      letter-spacing: 20px;
+    }
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+  .big-text-container {
+    @include margin-y(120px);
+
+    p {
+      width: 380px;
+      margin-left: 36px;
+
+      font-size: 80px;
+    }
+
+    h1 {
+      @include padding-y(70px);
+
+      width: 100%;
+      font-size: 82px;
+      letter-spacing: 26px;
+    }
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+  .big-text-container {
+    @include margin-y(140px);
+
+    p {
+      width: 350px;
+      margin-left: 48px;
+
+      font-size: 82px;
+    }
+
+    h1 {
+      @include padding-y(90px);
+
+      width: 100%;
+      font-size: 78px;
+      letter-spacing: 32px;
+    }
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+  .big-text-container {
+    @include margin-y(160px);
+
+    p {
+      width: 400px;
+      margin-left: 56px;
+
+      font-size: 92px;
+    }
+
+    h1 {
+      @include padding-y(100px);
+
+      width: 100%;
+      font-size: 96px;
+      letter-spacing: 48px;
+    }
+  }
+}
+
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  .big-text-container {
+    @include margin-y(180px);
+
+    p {
+      width: 460px;
+      margin-left: 64px;
+
+      font-size: 106px;
+    }
+
+    h1 {
+      @include padding-y(120px);
+
+      width: 100%;
+      font-size: 112px;
+      letter-spacing: 56px;
+    }
+  }
+}

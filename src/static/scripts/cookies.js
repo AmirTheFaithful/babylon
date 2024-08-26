@@ -22,7 +22,7 @@ rejectBtn.onclick = function () {
 
 let checkCookie = document.cookie.indexOf("CookieBy=Babylon");
 
-// checkCookie !== -1 ? hideBox() : cookiesBox.classList.remove("hide");
+checkCookie !== -1 ? hideBox() : cookiesBox.classList.remove("hide");
 
 // window.addEventListener("load", () => {
 //   cookiesBox.classList.remove("hide");
