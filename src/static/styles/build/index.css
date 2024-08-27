@@ -3120,6 +3120,7 @@
   .projects-list {
     padding-left: 25px;
     padding-right: 25px;
+    row-gap: 60px;
   }
   .projects-list .project-card {
     flex-direction: column;
@@ -3148,6 +3149,9 @@
 }
 /* Tablets */
 @media (min-width: 481px) {
+  .projects-list {
+    row-gap: 80px;
+  }
   .projects-list .left-part {
     width: 100%;
   }
@@ -3165,6 +3169,7 @@
   .projects-list {
     padding-left: 45px;
     padding-right: 45px;
+    row-gap: 100px;
   }
   .projects-list .left-part .thumb,
   .projects-list .left-part .thumb-text {
@@ -3186,6 +3191,7 @@
   .projects-list {
     padding-left: 45px;
     padding-right: 45px;
+    row-gap: 100px;
   }
   .projects-list .project-card {
     flex-direction: row;
@@ -3214,6 +3220,7 @@
   .projects-list {
     padding-left: 65px;
     padding-right: 65px;
+    row-gap: 120px;
   }
   .projects-list .project-card {
     background-image: linear-gradient(to right, rgba(19, 19, 19, 0.3764705882) 35%, #131313);
@@ -3232,6 +3239,7 @@
   .projects-list {
     padding-left: 100px;
     padding-right: 100px;
+    row-gap: 160px;
   }
   .projects-list .project-card {
     background-image: linear-gradient(to right, rgba(19, 19, 19, 0.3764705882) 40%, #131313);

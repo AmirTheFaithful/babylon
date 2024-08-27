@@ -88,6 +88,8 @@
   .projects-list {
     @include padding-x(25px);
 
+    row-gap: 60px;
+
     .project-card {
       flex-direction: column;
       row-gap: 10px;
@@ -123,6 +125,8 @@
 /* Tablets */
 @media (min-width: 481px) {
   .projects-list {
+    row-gap: 80px;
+
     .left-part {
       width: 100%;
 
@@ -145,6 +149,8 @@
 @media (min-width: 680px) {
   .projects-list {
     @include padding-x(45px);
+
+    row-gap: 100px;
 
     .left-part {
       .thumb,
@@ -171,6 +177,8 @@
 @media (min-width: 769px) {
   .projects-list {
     @include padding-x(45px);
+
+    row-gap: 100px;
 
     .project-card {
       flex-direction: row;
@@ -204,6 +212,8 @@
   .projects-list {
     @include padding-x(65px);
 
+    row-gap: 120px;
+
     .project-card {
       background-image: linear-gradient(to right, #13131360 35%, #131313);
     }
@@ -224,6 +234,8 @@
 @media (min-width: 1201px) {
   .projects-list {
     @include padding-x(100px);
+
+    row-gap: 160px;
 
     .project-card {
       background-image: linear-gradient(to right, #13131360 40%, #131313);
