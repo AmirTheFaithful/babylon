@@ -70,7 +70,7 @@
       display: grid;
       grid-template-rows: auto auto;
       grid-template-columns: auto auto;
-      column-gap: 20px;
+      column-gap: 45px;
 
       img {
         width: 300px;
@@ -89,6 +89,8 @@
 @media (min-width: 820px) {
   #proj-imgs {
     #images-container {
+      column-gap: 65px;
+
       img {
         width: 350px;
       }
@@ -99,6 +101,8 @@
 @media (min-width: 901px) {
   #proj-imgs {
     #images-container {
+      column-gap: 85px;
+
       img {
         width: 400px;
       }
