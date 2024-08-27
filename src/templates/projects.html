@@ -20,14 +20,20 @@
   <ul class="projects-list">
     {% for project in projects %}
     <li class="project-card">
-      <a href="/projects/{{(projects.index(project) + 1)}}">
+      <a class="left-part" href="/projects/{{(projects.index(project) + 1)}}">
         <img class="thumb" src="{{ project.images['1'] }}" />
 
         <div class="thumb-text">
           <h1>{{ project.name }}</h1>
+          <p>Від {{ project.pricing.wood.total }}$</p>
           <h2>{{ project.square }}</h2>
         </div>
       </a>
+      <div class="info-box">
+        <h1>{{ project.name }}</h1>
+        <p>Від {{ project.pricing.wood.total }}$</p>
+        <h2>{{ project.square }}</h2>
+      </div>
     </li>
     {% endfor %}
   </ul>

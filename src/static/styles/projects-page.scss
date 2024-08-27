@@ -7,13 +7,18 @@
   list-style-type: none;
 
   .project-card {
-    position: relative;
-
     display: flex;
+    box-shadow: 0 0 24px #222c, inset 0 0 16px #222d;
+    border-radius: 24px;
+    justify-content: space-between;
+  }
+
+  .left-part {
+    display: flex;
+    position: relative;
 
     .thumb {
       filter: brightness(60%);
-      box-shadow: 0 0 24px #222a, inset 0 0 16px #222d;
       border-radius: 24px;
 
       object-fit: cover;
@@ -23,7 +28,9 @@
     .thumb-text {
       position: absolute;
 
+      width: 100%;
       display: flex;
+      align-items: center;
       justify-content: space-between;
 
       h1 {
@@ -34,13 +41,44 @@
         }
       }
 
-      h2 {
-        color: #56ef56;
+      p {
+        color: #00ff00;
         font: {
           weight: 600;
-          family: "Oswald", "Arsenal SC";
+          family: "Montserrat";
         }
       }
+
+      h2 {
+        color: #56ef56df;
+        font-family: "Oswald", "Arsenal SC";
+      }
+    }
+  }
+
+  .info-box {
+    text-align: right;
+    background-color: transparent;
+
+    h1 {
+      color: white;
+      font: {
+        weight: 800;
+        family: "Roboto Condensed", "Arsenal SC";
+      }
+    }
+
+    p {
+      color: #00ff00;
+      font: {
+        weight: 600;
+        family: "Montserrat";
+      }
+    }
+
+    h2 {
+      color: #56ef56df;
+      font-family: "Oswald", "Arsenal SC";
     }
   }
 }
@@ -51,6 +89,11 @@
     @include padding-x(25px);
 
     .project-card {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+
+    .left-part {
       width: 100%;
 
       .thumb,
@@ -59,34 +102,137 @@
       }
 
       .thumb-text {
-        @include padding-x(20px);
+        @include padding-x(12px);
 
-        bottom: 26px;
+        bottom: 16px;
 
-        h1 {
-          font-size: 32px;
-        }
-
+        h1,
+        p,
         h2 {
-          font-size: 28px;
+          font-size: 20px;
         }
       }
+    }
+
+    .info-box {
+      display: none;
     }
   }
 }
 
 /* Tablets */
 @media (min-width: 481px) {
+  .projects-list {
+    .left-part {
+      width: 100%;
+
+      .thumb,
+      .thumb-text {
+        width: 100%;
+      }
+
+      .thumb-text {
+        h1,
+        p,
+        h2 {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 680px) {
+  .projects-list {
+    @include padding-x(45px);
+
+    .left-part {
+      .thumb,
+      .thumb-text {
+        width: 100%;
+      }
+
+      .thumb-text {
+        @include padding-x(20px);
+
+        bottom: 30px;
+
+        h1,
+        p,
+        h2 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
 }
 
 /* Small Desktop */
 @media (min-width: 769px) {
+  .projects-list {
+    @include padding-x(45px);
+
+    .project-card {
+      flex-direction: row;
+      row-gap: 0;
+      background-image: linear-gradient(to right, #13131360 30%, #131313);
+
+      .thumb {
+        filter: brightness(100%);
+      }
+    }
+
+    .left-part {
+      width: 60%;
+      .thumb-text {
+        display: none;
+      }
+    }
+
+    .info-box {
+      display: flex;
+      row-gap: 22px;
+      padding: 24px;
+      font-size: 20px;
+      flex-direction: column;
+    }
+  }
 }
 
 /* Large desktops */
 @media (min-width: 1025px) {
+  .projects-list {
+    @include padding-x(65px);
+
+    .project-card {
+      background-image: linear-gradient(to right, #13131360 35%, #131313);
+    }
+
+    .left-part {
+      width: 70%;
+    }
+
+    .info-box {
+      row-gap: 20px;
+      padding: 28px;
+      font-size: 22px;
+    }
+  }
 }
 
 /* TVs and extra large screens */
 @media (min-width: 1201px) {
+  .projects-list {
+    @include padding-x(100px);
+
+    .project-card {
+      background-image: linear-gradient(to right, #13131360 40%, #131313);
+    }
+
+    .info-box {
+      row-gap: 32px;
+      padding: 36px;
+      font-size: 26px;
+    }
+  }
 }
