@@ -22,42 +22,64 @@ closeButton.addEventListener("click", () => {
   gallery.classList.add("unshow");
 });
 
-let galleryContentSection = gallery.querySelector("#gallery-content");
-let previousButton = galleryContentSection.querySelector(".prev-btn");
-let nextButton = galleryContentSection.querySelector(".next-btn");
+function runButtons() {
+  let galleryContentSection = gallery.querySelector("#gallery-content");
+  let galleryTitleSection = gallery.querySelector("#gallery-title");
 
-if (images.length === 1) {
-  previousButton.disabled = true;
-  nextButton.disabled = true;
+  let previousButton = galleryContentSection.querySelector(".prev-btn");
+  let nextButton = galleryContentSection.querySelector(".next-btn");
+
+  let btmPrvBtn = galleryTitleSection.querySelector(".prev-btn");
+  let btmNxtBtn = galleryTitleSection.querySelector(".next-btn");
+
+  /* If only single picture is present for current
+   * project - disable prev and next buttons,
+   * as they are useless */
+  if (images.length === 1) {
+    previousButton.disabled = true;
+    nextButton.disabled = true;
+  }
+
+  // Otherwise, enable their functionality
+  previousButton.addEventListener("click", () => enableButton("left"));
+  nextButton.addEventListener("click", () => enableButton("right"));
+
+  btmPrvBtn.addEventListener("click", () => enableButton("left"));
+  btmNxtBtn.addEventListener("click", () => enableButton("right"));
 }
 
-previousButton.addEventListener("click", () => {
+// "runButton"'s helper functions
+const enableButton = (direction) => {
   let images = Array.from(imagesContainer.getElementsByTagName("img"));
   let currentImage = gallery.querySelector("img");
   let index = images.findIndex((image) => currentImage.src === image.src);
 
-  if (index === 0) {
-    currentImage.src = images[images.length - 1].src;
-  } else {
-    currentImage.src = images[index - 1].src;
+  if (direction === "left") {
+    leftButton(images, currentImage, index);
+  }
+
+  if (direction === "right") {
+    rightButton(images, currentImage, index);
   }
 
   renderImageIndex(images);
-});
+};
 
-nextButton.addEventListener("click", () => {
-  let images = Array.from(imagesContainer.getElementsByTagName("img"));
-  let currentImage = gallery.querySelector("img");
-  let index = images.findIndex((image) => currentImage.src === image.src);
-
-  if (index === images.length - 1) {
-    currentImage.src = images[0].src;
+const leftButton = (imgs, currImg, idx) => {
+  if (idx === 0) {
+    currImg.src = imgs[imgs.length - 1].src;
   } else {
-    currentImage.src = images[index + 1].src;
+    currImg.src = imgs[idx - 1].src;
   }
+};
 
-  renderImageIndex(images);
-});
+const rightButton = (imgs, currImg, idx) => {
+  if (idx === imgs.length - 1) {
+    currImg.src = imgs[0].src;
+  } else {
+    currImg.src = imgs[idx + 1].src;
+  }
+};
 
 const renderImageIndex = (imagesArray) => {
   let gallery = document.querySelector("#gallery");
@@ -69,4 +91,5 @@ const renderImageIndex = (imagesArray) => {
   galleryTitle.innerHTML = `${index + 1} / ${imagesArray.length}`;
 };
 
+runButtons();
 renderImageIndex(images);

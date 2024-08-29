@@ -1,8 +1,4 @@
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-/>
-
+<!-- Google Material icons link -->
 <link
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
@@ -25,7 +21,23 @@
     </button>
   </div>
 
-  <div id="gallery-title"><p></p></div>
+  <!-- Buttons in this section, are available
+    on mobile and tablet screens only
+  -->
+  <div id="gallery-title">
+    <!-- Left chevron -->
+    <button class="prev-btn gallery-btn">
+      <i class="material-symbols-outlined">chevron_left</i>
+    </button>
+
+    <!-- Index of the picture per pictures array length -->
+    <p></p>
+
+    <!-- Right chevron -->
+    <button class="next-btn gallery-btn">
+      <i class="material-symbols-outlined">chevron_right</i>
+    </button>
+  </div>
 </div>
 
 <script src="../../../static/scripts/gallery.js"></script>
