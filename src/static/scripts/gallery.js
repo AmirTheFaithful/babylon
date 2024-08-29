@@ -9,6 +9,8 @@ images.forEach((image) => {
 
     let galleryImage = gallery.querySelector("img");
     galleryImage.src = image.src;
+
+    renderImageIndex(images);
   });
 });
 
@@ -23,6 +25,11 @@ closeButton.addEventListener("click", () => {
 let galleryContentSection = gallery.querySelector("#gallery-content");
 let previousButton = galleryContentSection.querySelector(".prev-btn");
 let nextButton = galleryContentSection.querySelector(".next-btn");
+
+if (images.length === 1) {
+  previousButton.disabled = true;
+  nextButton.disabled = true;
+}
 
 previousButton.addEventListener("click", () => {
   let images = Array.from(imagesContainer.getElementsByTagName("img"));
@@ -53,9 +60,12 @@ nextButton.addEventListener("click", () => {
 });
 
 const renderImageIndex = (imagesArray) => {
+  let gallery = document.querySelector("#gallery");
+  let galleryContentSection = gallery.querySelector("#gallery-content");
   let imageElement = galleryContentSection.querySelector("img");
   let index = imagesArray.findIndex((image) => imageElement.src === image.src);
   let galleryTitle = gallery.querySelector("#gallery-title").querySelector("p");
+
   galleryTitle.innerHTML = `${index + 1} / ${imagesArray.length}`;
 };
 
