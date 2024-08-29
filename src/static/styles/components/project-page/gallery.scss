@@ -1,0 +1,75 @@
+@import "../../utils";
+
+.unshow {
+  display: none;
+}
+
+.show {
+  z-index: 200;
+  padding: 20px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  backdrop-filter: blur(64px);
+  background-color: rgba(5, 5, 5, 0.75);
+
+  .gallery-btn {
+    $bs: 50px; // Button size
+
+    color: #dcdcdc;
+    width: $bs;
+    height: $bs;
+    cursor: pointer;
+    border: 1px #fff solid;
+    padding: 7px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: transparent;
+
+    i {
+      vertical-align: middle;
+    }
+  }
+
+  #gallery-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 100%;
+  }
+
+  #gallery-content {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  #gallery-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    width: 100%;
+
+    font: {
+      weight: 600;
+      family: "Roboto Condensed", "Arsenal SC";
+    }
+  }
+}

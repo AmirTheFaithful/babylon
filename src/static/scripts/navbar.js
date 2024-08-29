@@ -8,7 +8,7 @@ function toggleDropdown() {
     dropdown.className = "dropdown-disabled";
   }
 
-  // Toggle button's image
+  // Toggle button's icon
   let icon = document.getElementById("hamburger-icon");
 
   if (icon.classList.contains("menuIcon")) {

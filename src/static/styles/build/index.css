@@ -741,7 +741,7 @@
   }
   #cataloque-grid .thumbnail h1 {
     color: white;
-    bottom: 12;
+    bottom: 12px;
     left: 0;
     opacity: 0;
     font-size: 26px;
@@ -1245,7 +1245,7 @@
 #proj-params .floor-mark {
   text-align: center;
   font-family: "Arsenal SC", "Roboto", "Roboto Condensed", "Montserrat", "Oswald";
-  font-font-weight: 400;
+  font-weight: 400;
 }
 
 /* Mobile */
@@ -1460,6 +1460,97 @@
     width: 520px;
   }
 }
+.movable-left {
+  opacity: 0;
+  transform: translateX(-400px);
+}
+
+.movable-right {
+  opacity: 0;
+  transform: translateX(400px);
+}
+
+.movable-top {
+  opacity: 0;
+  transform: translateY(400px);
+}
+
+.movable-bottom {
+  opacity: 0;
+  transform: translateY(-400px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .movable-left,
+  .movable-right,
+  .movable-top,
+  .movable-bottom {
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+}
+.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.unshow {
+  display: none;
+}
+
+.show {
+  z-index: 200;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  backdrop-filter: blur(64px);
+  background-color: rgba(5, 5, 5, 0.75);
+}
+.show .gallery-btn {
+  color: #dcdcdc;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px #fff solid;
+  padding: 7px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.show .gallery-btn i {
+  vertical-align: middle;
+}
+.show #gallery-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+.show #gallery-content {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.show #gallery-content img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.show #gallery-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  font-weight: 600;
+  font-family: "Roboto Condensed", "Arsenal SC";
+}
+
 /* Projects cataloque page components */
 /* Import common components, that may be found
  * in many places of the prject */
@@ -1908,7 +1999,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  z-index: 100;
+  z-index: 120;
   transition: all 0.6s linear;
 }
 #navbar #nav-links {
@@ -2049,7 +2140,7 @@
 }
 
 .dropdown-enabled {
-  z-index: 20;
+  z-index: 100;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -2483,7 +2574,7 @@
   .project-heading {
     padding-left: 42px;
     padding-right: 42px;
-    bottom: 120px;
+    bottom: 36px;
   }
   .project-heading h1 {
     font-size: 52px;
