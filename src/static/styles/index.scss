@@ -5,7 +5,7 @@
 @import "components/home-page/big-text";
 @import "components/home-page/sec_1";
 @import "components/home-page/sec_2";
-@import "components/home-page/sec_3";
+// @import "components/home-page/sec_3";
 @import "components/home-page/sec_4";
 @import "components/home-page/projects-list";
 @import "components/home-page/sponsors-line";
@@ -35,7 +35,9 @@
 @import "components/common/dropdown";
 @import "components/common/footer";
 @import "components/common/big-image";
-@import "components/common/cookies-box.scss";
+@import "components/common/cookies-box";
+@import "components/common/services";
+@import "components/common/service-card";
 
 /* Import pages */
 @import "home";

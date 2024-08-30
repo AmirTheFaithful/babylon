@@ -445,122 +445,6 @@
   transform: translateX(0);
 }
 
-#sec_3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: 20px;
-}
-#sec_3 #list-container {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-}
-#sec_3 strong,
-#sec_3 li {
-  font-family: "Roboto Condensed";
-}
-#sec_3 .list-col {
-  display: flex;
-  flex-direction: column;
-}
-#sec_3 .service-card {
-  color: black;
-  border-radius: 4px;
-}
-#sec_3 .short-list-container {
-  display: flex;
-}
-
-/* Mobile */
-@media (min-width: 300px) {
-  #sec_3 #list-container,
-  #sec_3 .short-list-container {
-    padding-left: 36px;
-    padding-right: 36px;
-    flex-direction: column;
-    row-gap: 20px;
-  }
-  #sec_3 .list-col {
-    row-gap: 40px;
-    padding: 12px;
-  }
-  #sec_3 .list-col strong {
-    font-size: 22px;
-  }
-  #sec_3 .list-col ul {
-    margin-left: 36px;
-  }
-  #sec_3 .list-col ul li {
-    font-size: 20px;
-  }
-  #sec_3 .service-card {
-    padding: 32px;
-  }
-  #sec_3 .service-card strong {
-    text-align: center;
-  }
-}
-/* Small Desktop */
-@media (min-width: 769px) {
-  #sec_3 #list-container,
-  #sec_3 .short-list-container {
-    padding-left: 36px;
-    padding-right: 36px;
-    align-items: stretch;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  #sec_3 #list-container .list-col,
-  #sec_3 .short-list-container .list-col {
-    justify-content: stretch;
-  }
-  .service-card {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .service-card strong {
-    font-size: 28px;
-  }
-  .service-card li {
-    font-size: 24px;
-  }
-}
-.movable-left {
-  opacity: 0;
-  transform: translateX(-400px);
-}
-
-.movable-right {
-  opacity: 0;
-  transform: translateX(400px);
-}
-
-.movable-top {
-  opacity: 0;
-  transform: translateY(400px);
-}
-
-.movable-bottom {
-  opacity: 0;
-  transform: translateY(-400px);
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .movable-left,
-  .movable-right,
-  .movable-top,
-  .movable-bottom {
-    transition: opacity 1.5s ease, transform 1.5s ease;
-  }
-}
-.animated {
-  opacity: 1;
-  transform: translateX(0);
-}
-
 #sec_4 {
   position: relative;
 }
@@ -2844,6 +2728,111 @@
     transform: scale(1.06);
   }
 }
+.movable-left {
+  opacity: 0;
+  transform: translateX(-400px);
+}
+
+.movable-right {
+  opacity: 0;
+  transform: translateX(400px);
+}
+
+.movable-top {
+  opacity: 0;
+  transform: translateY(400px);
+}
+
+.movable-bottom {
+  opacity: 0;
+  transform: translateY(-400px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .movable-left,
+  .movable-right,
+  .movable-top,
+  .movable-bottom {
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+}
+.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  #services {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+/* Tablets */
+@media (min-width: 481px) {
+  #services {
+    padding-left: 50px;
+    padding-right: 50px;
+    row-gap: 30px;
+  }
+}
+/* Small Desktop */
+@media (min-width: 769px) {
+  #services {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+/* Large desktops */
+/* TVs and extra large screens */
+.service-card {
+  overflow: hidden;
+  font-weight: 600;
+  font-family: "Roboto", "Oswald";
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.service-card h1 {
+  text-align: center;
+}
+.service-card div {
+  width: 100%;
+  height: 100%;
+}
+.service-card div ul {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  .service-card {
+    border-radius: 10px;
+  }
+  .service-card div {
+    padding: 16px;
+  }
+  .service-card div h1 {
+    font-size: 20px;
+  }
+  .service-card div li {
+    font-size: 16px;
+  }
+}
+/* Tablets */
+/* Small Desktop */
+/* Large desktops */
+/* TVs and extra large screens */
 /* Import pages */
 /* Import components of the home page */
 .movable-left {

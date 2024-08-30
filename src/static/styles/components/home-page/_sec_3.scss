@@ -24,10 +24,12 @@
 
   .service-card {
     color: black;
-    // box-shadow: 0 0 16px #2226;
+    box-shadow: 0 0 16px #2226;
     border-radius: 4px;
-    // background-image: linear-gradient(to bottom right, #02280cd6, #5e5d23d6);
-    // background-color: #3b3b3bd6;
+
+    background-size: cover;
+    background-color: #3b3b3bd6;
+    background-position: center;
   }
 
   .short-list-container {

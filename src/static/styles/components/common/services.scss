@@ -1,0 +1,41 @@
+@import "../../utils";
+
+/* Mobile */
+@media (min-width: 300px) {
+  #services {
+    @include margin-y(60px);
+    @include padding-x(40px);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+  #services {
+    @include padding-x(50px);
+
+    row-gap: 30px;
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+  #services {
+    @include padding-x(30px);
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+}
+
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+}
