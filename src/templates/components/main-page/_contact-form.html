@@ -18,6 +18,18 @@
     <textarea type="text" name="message" placeholder="Повідомлення"></textarea>
 
     <!-- Submit button -->
-    <input class="link-btn" type="submit" value="Надіслати" />
+    <input id="submit-btn" class="link-btn" type="submit" value="Надіслати" />
   </form>
 </section>
+
+<script>
+  let btn = document.querySelector("submit-btn");
+
+  const onSubmit = (event) => {
+    event.preventDefault();
+
+    // More code to be continued
+  };
+
+  btn.addEventListener("click", onSubmit);
+</script>

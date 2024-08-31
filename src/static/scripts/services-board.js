@@ -7,7 +7,7 @@ let services = [
       "Розробка та затвердження проекту будинку",
     ],
     imgURL: "../static/assets/services/ser-1.jpg",
-    color: "16, 205, 19,",
+    color: "0, 85, 10,",
   },
 
   {
@@ -18,7 +18,7 @@ let services = [
       "Монтаж системи опалення та вентиляції",
     ],
     imgURL: "../static/assets/services/ser-2.jpg",
-    color: "27, 137, 255,",
+    color: "16, 74, 137,",
   },
 
   {
@@ -40,7 +40,7 @@ let services = [
       "Малярні роботи та укладання плитки",
     ],
     imgURL: "../static/assets/services/ser-4.jpg",
-    color: "209, 198, 135,",
+    color: "112, 94, 45,",
   },
 
   {
@@ -51,14 +51,14 @@ let services = [
       "Монтаж міжповерхових перекриттів",
     ],
     imgURL: "../static/assets/services/ser-5.jpg",
-    color: "211, 136, 31,",
+    color: "126, 80, 15,",
   },
 
   {
     title: "Оздоблення зовнішнього фасаду",
     text: ["Установка зовнішнього утеплення", "Малярні роботи"],
     imgURL: "../static/assets/services/ser-6.jpg",
-    color: "255, 119, 153,",
+    color: "122, 47, 65,",
   },
 
   {
@@ -69,7 +69,7 @@ let services = [
       "Встановлення водостоків та інших елементів покрівлі",
     ],
     imgURL: "../static/assets/services/ser-7.jpg",
-    color: "236, 146, 0,",
+    color: "154, 95, 0,",
   },
 
   {
@@ -80,7 +80,7 @@ let services = [
       "Установка огорожі та воріт",
     ],
     imgURL: "../static/assets/services/ser-8.jpg",
-    color: "61, 247, 169,",
+    color: "28, 135, 91,",
   },
 
   {
@@ -90,7 +90,7 @@ let services = [
       "Встановлення зовнішніх та внутрішніх дверей",
     ],
     imgURL: "../static/assets/services/ser-9.jpg",
-    color: "135, 207, 255,",
+    color: "53, 82, 102,",
   },
 
   {
@@ -101,7 +101,7 @@ let services = [
       "Передача ключів замовнику",
     ],
     imgURL: "../static/assets/services/ser-10.jpg",
-    color: "206, 60, 255,",
+    color: "107, 29, 133,",
   },
 ];
 
