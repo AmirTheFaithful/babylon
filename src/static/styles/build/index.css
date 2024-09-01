@@ -1121,9 +1121,11 @@
 #proj-params #single-floor-params {
   display: flex;
   justify-content: space-between;
+  background-size: 100% 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: overlay;
 }
 #proj-params #single-floor-params p {
-  text-align: center;
   font-family: "Arsenal SC";
 }
 #proj-params .floor-mark {
@@ -1239,6 +1241,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#proj-bps img {
+  cursor: pointer;
 }
 #proj-bps #bps-container {
   justify-content: space-between;
@@ -2317,7 +2322,8 @@
   overflow-y: hidden;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
 .darkener {

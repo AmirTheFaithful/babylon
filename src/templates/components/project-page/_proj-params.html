@@ -3,7 +3,10 @@
   {% if project.params['1-floor'] %}
   <div id="multiple-floors-params">
     <p class="floor-mark">1-ИЙ ПОВЕРХ:</p>
-    <div id="single-floor-params">
+    <div
+      id="single-floor-params"
+      style="background-image: url('{{ project.images["1"] }}')"
+    >
       <!-- Column of the names of the rooms -->
       <div class="param-col">
         {% for room in project.params['1-floor'].keys() %}
@@ -20,7 +23,10 @@
     </div>
 
     <p class="floor-mark">2-ИЙ ПОВЕРХ:</p>
-    <div id="single-floor-params">
+    <div
+      id="single-floor-params"
+      style="background-image: url(' {{ project.images[(project.images |length)|string] }} ')"
+    >
       <!-- Column of the names of the rooms -->
       <div class="param-col">
         {% for room in project.params['2-floor'].keys() %}
@@ -38,7 +44,8 @@
   </div>
 
   {% else %}
-  <div id="single-floor-params">
+  <div id="single-floor-params"
+       style="background-image: url('{{ project.images["1"] }}')">
     <!-- Column of the names of the rooms -->
     <div class="param-col">
       {% for room in project.params.keys() %}
