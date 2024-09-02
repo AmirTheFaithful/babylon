@@ -106,7 +106,7 @@ let services = [
 ];
 
 function renderBoard() {
-  let servicesSection = document.querySelector("#services");
+  let servicesSection = document.querySelector(".services");
 
   services.forEach((service, index) => {
     let card = getCard(service);
