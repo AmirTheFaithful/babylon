@@ -896,9 +896,11 @@
   color: black;
 }
 #form-container #contact-form input[type=submit] {
-  color: white;
+  padding-left: 65px;
+  padding-right: 65px;
   border: none;
-  background-color: rgba(17, 17, 16, 0.8745098039);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Mobile */
@@ -3072,23 +3074,9 @@
   font-family: "Montserrat";
   font-weight: 700;
 }
-#project-page #order-btn {
+#project-page .link-btn {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  color: white;
-  font-size: 26px;
-  font-weight: 600;
-  font-family: "Roboto", "Arsenal SC";
-  box-shadow: 6px 8px 22px rgba(34, 34, 34, 0.6666666667);
-  border-radius: 6px;
-  text-decoration: none;
-  background-color: rgba(34, 34, 34, 0.9333333333);
 }
 
 /* Mobile */

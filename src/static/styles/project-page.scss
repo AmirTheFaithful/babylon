@@ -19,22 +19,9 @@
     }
   }
 
-  #order-btn {
-    @include margin-x(auto);
-    @include margin-y(80px);
-    @include padding-x(30px);
-    @include padding-y(12px);
-
-    color: white;
-    font: {
-      size: 26px;
-      weight: 600;
-      family: "Roboto", "Arsenal SC";
-    }
-    box-shadow: 6px 8px 22px #222a;
-    border-radius: 6px;
-    text-decoration: none;
-    background-color: #222e;
+  .link-btn {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

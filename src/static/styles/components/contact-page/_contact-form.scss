@@ -27,9 +27,11 @@
     }
 
     input[type="submit"] {
-      color: white;
+      @include padding-x(65px);
+
       border: none;
-      background-color: #111110df;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
