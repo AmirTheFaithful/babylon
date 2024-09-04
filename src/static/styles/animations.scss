@@ -1,0 +1,80 @@
+.slide-show-container {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background-size: 100% 100%;
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+#w-1 {
+  background-image: url("../static/assets/proj-1/img-1.jpg");
+}
+
+#w-2 {
+  background-image: url("../static/assets/proj-2/img-1.jpg");
+  animation: slideTwoAnim 16s infinite;
+}
+
+#w-3 {
+  background-image: url("../static/assets/proj-3/img-1.jpg");
+  animation: slideThreeAnim 16s infinite;
+}
+
+.wrapper-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  font: 700 px / 1.4 sans-serif;
+  margin-top: 150px;
+}
+
+@keyframes slideTwoAnim {
+  0% {
+    opacity: 0;
+  }
+  17% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slideThreeAnim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 1;
+  }
+  83% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

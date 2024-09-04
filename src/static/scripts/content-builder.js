@@ -50,7 +50,7 @@ function addLine(imageURL, headingText, text) {
   const heading = document.createElement("h1");
 
   line.className = "content-line";
-  line.classList.add("movable-bottom");
+  line.classList.add("movable-top");
   line.style.backgroundImage = `url('${imageURL}')`;
 
   heading.innerHTML = headingText;
