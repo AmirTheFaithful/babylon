@@ -93,14 +93,28 @@
   }
 }
 
-.movable-left {
-  opacity: 0;
-  transform: translateX(-400px);
+@media (min-width: 300px) {
+  .movable-left {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  .movable-right {
+    opacity: 0;
+    transform: translateX(200px);
+  }
 }
 
-.movable-right {
-  opacity: 0;
-  transform: translateX(400px);
+@media (min-width: 420px) {
+  .movable-left {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+
+  .movable-right {
+    opacity: 0;
+    transform: translateX(400px);
+  }
 }
 
 .movable-top {

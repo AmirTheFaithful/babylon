@@ -17,6 +17,9 @@
 
   backdrop-filter: blur(6px);
   background-color: #fffa;
+
+  /* For IOS Safari */
+  -webkit-backdrop-filter: blur(6px);
   // background-color: rgba(220, 220, 245, 0.4);
 
   ul {

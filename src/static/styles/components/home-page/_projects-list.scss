@@ -1,3 +1,5 @@
+@import "../../utils";
+
 #projects-list {
   display: flex;
   align-items: center;
@@ -38,8 +40,8 @@
 
     .thumbnail,
     .thumbnail > img {
-      width: 400px;
-      height: 250px;
+      width: 300px;
+      height: 200px;
     }
 
     .thumbnail {

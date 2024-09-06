@@ -11,6 +11,9 @@
     padding: 16px;
     backdrop-filter: brightness(40%);
 
+    /* For IOS Safari */
+    -webkit-backdrop-filter: brightness(40%);
+
     h1 {
       color: white;
       font-family: "Roboto", "Montserrat";

@@ -1,5 +1,9 @@
 @import "../../utils";
 
+.android-p-text {
+  background-image: none;
+}
+
 .big-text-container {
   background-image: linear-gradient(to bottom, transparent, #131313 35%);
 
@@ -42,7 +46,7 @@
 
       width: 100%;
       font-size: 72px;
-      letter-spacing: 20px;
+      letter-spacing: 12px;
     }
   }
 }
